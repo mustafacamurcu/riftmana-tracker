@@ -31,7 +31,22 @@ class RefreshWorker(context: Context, params: WorkerParameters) :
             renderWidget(applicationContext, appWidgetManager, id)
         }
 
+        checkForAppUpdate()
+
         return if (fetched != null) Result.success() else Result.retry()
+    }
+
+    private fun checkForAppUpdate() {
+        val update = UpdateChecker.checkForUpdate(applicationContext) ?: return
+        if (UpdateChecker.canInstall(applicationContext)) {
+            // Install permission was already granted in a previous session, so this can
+            // go straight to the system install prompt without waiting for the app to
+            // be opened. Android still requires one tap on that prompt to confirm -
+            // there's no fully silent install path for a sideloaded app.
+            UpdateChecker.downloadAndInstall(applicationContext, update)
+        } else {
+            NotificationHelper.showUpdateAvailableNotification(applicationContext, update)
+        }
     }
 
     private fun fetchLatest(): FetchedValue? {
