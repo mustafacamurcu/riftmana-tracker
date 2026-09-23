@@ -54,7 +54,10 @@ $versionJson = @{
     notes       = $Notes
 } | ConvertTo-Json
 
-Set-Content -Path (Join-Path $ReleasesDir "version.json") -Value $versionJson -Encoding utf8
+# Set-Content -Encoding utf8 writes a BOM in Windows PowerShell 5.1, which
+# org.json fails to parse on the Android side - write BOM-less UTF-8 instead.
+$versionJsonPath = Join-Path $ReleasesDir "version.json"
+[System.IO.File]::WriteAllText($versionJsonPath, $versionJson, (New-Object System.Text.UTF8Encoding $false))
 
 Set-Location $RepoDir
 git add releases/version.json releases/riftmana-widget.apk
