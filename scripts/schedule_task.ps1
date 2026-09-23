@@ -5,6 +5,13 @@
 # StartWhenAvailable means: if the computer was off/asleep when an hourly
 # trigger was due, it runs as soon as the computer is next on - matching
 # "hourly whenever the computer is on" rather than requiring it stay on.
+#
+# The task runs under an S4U logon (LogonType S4U): it fires even when this
+# account is logged out or at the lock screen, without storing the Windows
+# password in Task Scheduler. S4U only grants local-machine resources - that's
+# fine here (local Playwright browser, local file writes, and outbound HTTPS
+# for git push all work under S4U; it just can't reach other machines using
+# this account's network credentials, which nothing here needs).
 
 $TaskName = "RiftmanaTotalValueTracker"
 $RepoDir = Split-Path -Parent $PSScriptRoot
@@ -24,8 +31,11 @@ $Settings = New-ScheduledTaskSettingsSet `
     -ExecutionTimeLimit (New-TimeSpan -Minutes 10) `
     -MultipleInstances IgnoreNew
 
+$Principal = New-ScheduledTaskPrincipal -UserId "$env:USERDOMAIN\$env:USERNAME" `
+    -LogonType S4U -RunLevel Limited
+
 Register-ScheduledTask -TaskName $TaskName -Action $Action -Trigger $Trigger `
-    -Settings $Settings `
+    -Settings $Settings -Principal $Principal `
     -Description "Hourly scrape of Total Value from riftmana.com/collection/?user=moose, pushed to GitHub" `
     -Force
 
