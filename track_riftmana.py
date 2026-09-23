@@ -69,17 +69,23 @@ def try_extract_total_value(browser) -> str | None:
             return None
 
         # The page briefly shows a "$0.00" skeleton/placeholder before the
-        # real figure loads in, so don't trust the first match - poll until
-        # two consecutive reads agree (i.e. the number has settled).
+        # real figure loads in. $0.00 is never a real reading (a collection
+        # with zero cards wouldn't have a page), so it's excluded outright;
+        # beyond that, don't trust the first match at all - poll until two
+        # consecutive reads agree (the number has settled), since a slower
+        # runner can take several seconds longer than a local machine to
+        # replace the placeholder.
         previous = None
-        for _ in range(8):
+        for _ in range(12):
             body_text = page.inner_text("body")
             match = VALUE_RE.search(body_text)
             current = match.group(1).strip() if match else None
+            if current is not None and to_numeric(current) == 0:
+                current = None  # placeholder; treat as "not loaded yet"
             if current is not None and current == previous:
                 return current
             previous = current
-            page.wait_for_timeout(2_000)
+            page.wait_for_timeout(2_500)
         return previous
     except PlaywrightTimeoutError:
         return None
