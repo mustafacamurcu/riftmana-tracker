@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>moose's Collection — Total Value</title>
+<meta name="description" content="Hourly-tracked Total Value of moose's RiftMana card collection.">
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: #f9f9f7;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) { color-scheme: dark; }
+    html:where(:not([data-theme="light"])) body { background: #0d0d0d; }
+  }
+  :root[data-theme="dark"] body { background: #0d0d0d; }
+
+  .page { max-width: 720px; margin: 0 auto; padding: 20px 16px 48px; }
+
+  .viz-root {
+    --surface-1:      #fcfcfb;
+    --text-primary:   #0b0b0b;
+    --text-secondary: #52514e;
+    --text-muted:     #898781;
+    --gridline:       #e1e0d9;
+    --baseline:       #c3c2b7;
+    --series-1:       #2a78d6;
+    --series-1-wash:  rgba(42, 120, 214, 0.10);
+    --good:           #006300;
+    --critical:       #d03b3b;
+    --border:         rgba(11,11,11,0.10);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) .viz-root {
+      --surface-1:      #1a1a19;
+      --text-primary:   #ffffff;
+      --text-secondary: #c3c2b7;
+      --text-muted:     #898781;
+      --gridline:       #2c2c2a;
+      --baseline:       #383835;
+      --series-1:       #3987e5;
+      --series-1-wash:  rgba(57, 135, 229, 0.14);
+      --good:           #0ca30c;
+      --critical:       #e66767;
+      --border:         rgba(255,255,255,0.10);
+    }
+  }
+  :root[data-theme="dark"] .viz-root {
+    --surface-1:      #1a1a19;
+    --text-primary:   #ffffff;
+    --text-secondary: #c3c2b7;
+    --text-muted:     #898781;
+    --gridline:       #2c2c2a;
+    --baseline:       #383835;
+    --series-1:       #3987e5;
+    --series-1-wash:  rgba(57, 135, 229, 0.14);
+    --good:           #0ca30c;
+    --critical:       #e66767;
+    --border:         rgba(255,255,255,0.10);
+  }
+
+  .eyebrow {
+    font-size: 13px; font-weight: 600; letter-spacing: 0.02em;
+    text-transform: uppercase; color: var(--text-muted);
+    margin: 0 0 4px;
+  }
+  h1 {
+    font-size: 19px; font-weight: 600; color: var(--text-primary);
+    margin: 0 0 20px; line-height: 1.3;
+  }
+  h1 a { color: inherit; }
+
+  .card {
+    background: var(--surface-1);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 16px;
+  }
+
+  .hero-row {
+    display: flex; align-items: baseline; justify-content: space-between;
+    flex-wrap: wrap; gap: 8px 16px; margin-bottom: 4px;
+  }
+  .hero-value {
+    font-size: 48px; font-weight: 600; color: var(--text-primary);
+    line-height: 1.05; letter-spacing: -0.01em;
+  }
+  .hero-delta { font-size: 15px; font-weight: 600; white-space: nowrap; }
+  .hero-delta.up { color: var(--good); }
+  .hero-delta.down { color: var(--critical); }
+  .hero-delta.flat { color: var(--text-muted); }
+  .hero-updated { font-size: 13px; color: var(--text-muted); margin: 0; }
+
+  .chart-wrap { position: relative; margin-top: 8px; }
+  svg { display: block; width: 100%; height: auto; overflow: visible; touch-action: pan-y; }
+  .gridline { stroke: var(--gridline); stroke-width: 1; }
+  .baseline { stroke: var(--baseline); stroke-width: 1; }
+  .tick-label { fill: var(--text-muted); font-size: 11px; }
+  .series-area { fill: var(--series-1-wash); }
+  .series-line { fill: none; stroke: var(--series-1); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+  .end-dot { fill: var(--series-1); stroke: var(--surface-1); stroke-width: 2; }
+  .end-label { fill: var(--text-primary); font-size: 13px; font-weight: 600; }
+  .crosshair { stroke: var(--baseline); stroke-width: 1; pointer-events: none; }
+  .hover-dot { fill: var(--series-1); stroke: var(--surface-1); stroke-width: 2; pointer-events: none; }
+  .hit-layer { fill: transparent; cursor: crosshair; }
+
+  .tooltip {
+    position: absolute; pointer-events: none;
+    background: var(--surface-1); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 10px; font-size: 12px;
+    color: var(--text-secondary); box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    transform: translate(-50%, -110%); white-space: nowrap; opacity: 0; transition: opacity 0.1s;
+  }
+  .tooltip.visible { opacity: 1; }
+  .tooltip .t-value { color: var(--text-primary); font-weight: 600; font-size: 13px; }
+
+  .status { font-size: 13px; color: var(--text-muted); padding: 32px 0; text-align: center; }
+
+  details.table-view { margin-top: 4px; }
+  details.table-view summary {
+    cursor: pointer; font-size: 13px; color: var(--text-secondary);
+    font-weight: 600; padding: 4px 0; user-select: none;
+  }
+  .table-scroll { max-height: 260px; overflow-y: auto; margin-top: 8px; border-top: 1px solid var(--border); }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 6px 4px; border-bottom: 1px solid var(--border); }
+  th { color: var(--text-muted); font-weight: 600; position: sticky; top: 0; background: var(--surface-1); }
+  td.num { text-align: right; font-variant-numeric: tabular-nums; color: var(--text-primary); }
+  td.time { color: var(--text-secondary); }
+
+  footer { font-size: 12px; color: var(--text-muted); margin-top: 20px; line-height: 1.6; }
+  footer a { color: inherit; }
+</style>
+</head>
+<body>
+<div class="page viz-root">
+  <p class="eyebrow">RiftMana Collection Tracker</p>
+  <h1><a href="https://riftmana.com/collection/?user=moose" target="_blank" rel="noopener">moose's Collection</a> — Total Value</h1>
+
+  <div class="card" id="hero-card">
+    <div class="status">Loading…</div>
+  </div>
+
+  <div class="card">
+    <div class="chart-wrap" id="chart-wrap">
+      <div class="status">Loading chart…</div>
+    </div>
+    <details class="table-view" id="table-view">
+      <summary>View as table</summary>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Time (UTC)</th><th style="text-align:right">Total Value</th></tr></thead>
+          <tbody id="table-body"></tbody>
+        </table>
+      </div>
+    </details>
+  </div>
+
+  <footer>
+    Logged hourly by a scheduled <a href="https://github.com/mustafacamurcu/riftmana-tracker" target="_blank" rel="noopener">GitHub Actions job</a>.
+    Source: <a href="https://riftmana.com/collection/?user=moose" target="_blank" rel="noopener">riftmana.com</a>.
+  </footer>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  const CSV_URL = "total_value_history.csv";
+  const REFRESH_MS = 5 * 60 * 1000;
+
+  function parseCSV(text) {
+    const lines = text.trim().split(/\r?\n/);
+    const rows = [];
+    for (let i = 1; i < lines.length; i++) {
+      const parts = lines[i].split(",");
+      if (parts.length < 3) continue;
+      const [ts, raw, num] = parts;
+      const value = parseFloat(num);
+      const date = new Date(ts);
+      if (isNaN(value) || isNaN(date.getTime())) continue;
+      rows.push({ ts, raw: raw.trim(), value, date });
+    }
+    rows.sort((a, b) => a.date - b.date);
+    return rows;
+  }
+
+  function fmtMoney(v) {
+    return "$" + v.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  }
+
+  function fmtRelative(date) {
+    const diffMs = Date.now() - date.getTime();
+    const mins = Math.round(diffMs / 60000);
+    if (mins < 1) return "just now";
+    if (mins < 60) return mins + " min ago";
+    const hours = Math.round(mins / 60);
+    if (hours < 48) return hours + " hr ago";
+    const days = Math.round(hours / 24);
+    return days + " days ago";
+  }
+
+  function fmtAxisDate(date, spanMs) {
+    if (spanMs > 3 * 24 * 3600 * 1000) {
+      return date.toLocaleDateString(undefined, { month: "short", day: "numeric" });
+    }
+    return date.toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" });
+  }
+
+  function niceStep(rough) {
+    const pow = Math.pow(10, Math.floor(Math.log10(rough)));
+    const norm = rough / pow;
+    let step;
+    if (norm < 1.5) step = 1;
+    else if (norm < 3) step = 2;
+    else if (norm < 7) step = 5;
+    else step = 10;
+    return step * pow;
+  }
+
+  function renderHero(rows) {
+    const card = document.getElementById("hero-card");
+    const last = rows[rows.length - 1];
+    const prev = rows.length > 1 ? rows[rows.length - 2] : null;
+    let deltaHtml = "";
+    if (prev) {
+      const diff = last.value - prev.value;
+      const cls = diff > 0.005 ? "up" : diff < -0.005 ? "down" : "flat";
+      const sign = diff > 0 ? "+" : "";
+      deltaHtml = `<span class="hero-delta ${cls}">${sign}${fmtMoney(diff)} since last reading</span>`;
+    }
+    card.innerHTML = `
+      <div class="hero-row">
+        <div class="hero-value"></div>
+        ${deltaHtml}
+      </div>
+      <p class="hero-updated"></p>
+    `;
+    card.querySelector(".hero-value").textContent = fmtMoney(last.value);
+    card.querySelector(".hero-updated").textContent = "Updated " + fmtRelative(last.date) + " · " + last.date.toLocaleString();
+  }
+
+  function renderTable(rows) {
+    const body = document.getElementById("table-body");
+    const frag = document.createDocumentFragment();
+    for (let i = rows.length - 1; i >= 0; i--) {
+      const r = rows[i];
+      const tr = document.createElement("tr");
+      const tdTime = document.createElement("td");
+      tdTime.className = "time";
+      tdTime.textContent = r.date.toLocaleString();
+      const tdVal = document.createElement("td");
+      tdVal.className = "num";
+      tdVal.textContent = fmtMoney(r.value);
+      tr.appendChild(tdTime);
+      tr.appendChild(tdVal);
+      frag.appendChild(tr);
+    }
+    body.innerHTML = "";
+    body.appendChild(frag);
+  }
+
+  function renderChart(rows) {
+    const wrap = document.getElementById("chart-wrap");
+    wrap.innerHTML = "";
+
+    if (rows.length < 2) {
+      const status = document.createElement("div");
+      status.className = "status";
+      status.textContent = "Not enough data points yet — check back after a couple more hourly runs.";
+      wrap.appendChild(status);
+      return;
+    }
+
+    const W = 680, H = 280;
+    const padL = 56, padR = 16, padT = 16, padB = 28;
+    const plotW = W - padL - padR, plotH = H - padT - padB;
+
+    const xMin = rows[0].date.getTime(), xMax = rows[rows.length - 1].date.getTime();
+    const xSpan = Math.max(xMax - xMin, 1);
+
+    const values = rows.map(r => r.value);
+    let vMin = Math.min(...values), vMax = Math.max(...values);
+    if (vMin === vMax) { vMin -= 1; vMax += 1; }
+    const pad = (vMax - vMin) * 0.12;
+    let yMin = vMin - pad, yMax = vMax + pad;
+    if (yMin < 0 && vMin >= 0) yMin = 0;
+
+    const x = t => padL + ((t - xMin) / xSpan) * plotW;
+    const y = v => padT + plotH - ((v - yMin) / (yMax - yMin)) * plotH;
+
+    const step = niceStep((yMax - yMin) / 4);
+    const yTicks = [];
+    let t0 = Math.ceil(yMin / step) * step;
+    for (let v = t0; v <= yMax; v += step) yTicks.push(v);
+
+    const linePath = rows.map((r, i) => (i === 0 ? "M" : "L") + x(r.date.getTime()).toFixed(2) + "," + y(r.value).toFixed(2)).join(" ");
+    const areaPath = linePath +
+      ` L${x(rows[rows.length - 1].date.getTime()).toFixed(2)},${(padT + plotH).toFixed(2)}` +
+      ` L${x(rows[0].date.getTime()).toFixed(2)},${(padT + plotH).toFixed(2)} Z`;
+
+    const svgNS = "http://www.w3.org/2000/svg";
+    const svg = document.createElementNS(svgNS, "svg");
+    svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+    svg.setAttribute("role", "img");
+    svg.setAttribute("aria-label", "Line chart of Total Value over time");
+
+    let defs = "";
+    let gridSvg = "";
+    yTicks.forEach(v => {
+      const yy = y(v).toFixed(2);
+      gridSvg += `<line class="gridline" x1="${padL}" x2="${W - padR}" y1="${yy}" y2="${yy}"></line>`;
+      gridSvg += `<text class="tick-label" x="${padL - 8}" y="${yy}" text-anchor="end" dominant-baseline="middle">${v.toLocaleString(undefined,{maximumFractionDigits:0})}</text>`;
+    });
+
+    const xTickCount = Math.min(5, rows.length);
+    let xTicksSvg = "";
+    for (let i = 0; i < xTickCount; i++) {
+      const frac = xTickCount === 1 ? 0 : i / (xTickCount - 1);
+      const t = xMin + frac * xSpan;
+      const xx = x(t).toFixed(2);
+      xTicksSvg += `<text class="tick-label" x="${xx}" y="${H - 6}" text-anchor="${i === 0 ? "start" : i === xTickCount - 1 ? "end" : "middle"}">${fmtAxisDate(new Date(t), xSpan)}</text>`;
+    }
+
+    const last = rows[rows.length - 1];
+    const lastX = x(last.date.getTime()).toFixed(2);
+    const lastY = y(last.value).toFixed(2);
+
+    svg.innerHTML = `
+      ${defs}
+      ${gridSvg}
+      <line class="baseline" x1="${padL}" x2="${W - padR}" y1="${(padT + plotH).toFixed(2)}" y2="${(padT + plotH).toFixed(2)}"></line>
+      ${xTicksSvg}
+      <path class="series-area" d="${areaPath}"></path>
+      <path class="series-line" d="${linePath}"></path>
+      <circle class="end-dot" cx="${lastX}" cy="${lastY}" r="4.5"></circle>
+      <g id="hover-layer" style="opacity:0">
+        <line class="crosshair" x1="0" x2="0" y1="${padT}" y2="${padT + plotH}"></line>
+        <circle class="hover-dot" r="4.5"></circle>
+      </g>
+      <rect class="hit-layer" x="${padL}" y="${padT}" width="${plotW}" height="${plotH}"></rect>
+    `;
+
+    wrap.appendChild(svg);
+
+    const tooltip = document.createElement("div");
+    tooltip.className = "tooltip";
+    wrap.appendChild(tooltip);
+
+    const hitLayer = svg.querySelector(".hit-layer");
+    const hoverLayer = svg.querySelector("#hover-layer");
+    const hoverDot = svg.querySelector(".hover-dot");
+    const crosshair = svg.querySelector(".crosshair");
+
+    function nearestRow(clientX) {
+      const rect = svg.getBoundingClientRect();
+      const svgX = ((clientX - rect.left) / rect.width) * W;
+      const frac = Math.min(1, Math.max(0, (svgX - padL) / plotW));
+      const t = xMin + frac * xSpan;
+      let lo = 0, hi = rows.length - 1;
+      while (lo < hi) {
+        const mid = (lo + hi) >> 1;
+        if (rows[mid].date.getTime() < t) lo = mid + 1; else hi = mid;
+      }
+      if (lo > 0) {
+        const before = rows[lo - 1], after = rows[lo];
+        if (Math.abs(before.date.getTime() - t) <= Math.abs(after.date.getTime() - t)) return before;
+      }
+      return rows[lo];
+    }
+
+    function showAt(clientX, clientY) {
+      const r = nearestRow(clientX);
+      const px = x(r.date.getTime());
+      const py = y(r.value);
+      crosshair.setAttribute("x1", px.toFixed(2));
+      crosshair.setAttribute("x2", px.toFixed(2));
+      hoverDot.setAttribute("cx", px.toFixed(2));
+      hoverDot.setAttribute("cy", py.toFixed(2));
+      hoverLayer.style.opacity = "1";
+
+      const rect = wrap.getBoundingClientRect();
+      const svgRect = svg.getBoundingClientRect();
+      const scale = svgRect.width / W;
+      tooltip.style.left = (svgRect.left - rect.left + px * scale) + "px";
+      tooltip.style.top = (svgRect.top - rect.top + py * scale) + "px";
+      tooltip.innerHTML = `<div class="t-value">${fmtMoney(r.value)}</div><div>${r.date.toLocaleString()}</div>`;
+      tooltip.classList.add("visible");
+    }
+
+    function hide() {
+      hoverLayer.style.opacity = "0";
+      tooltip.classList.remove("visible");
+    }
+
+    hitLayer.addEventListener("pointermove", e => showAt(e.clientX, e.clientY));
+    hitLayer.addEventListener("pointerdown", e => showAt(e.clientX, e.clientY));
+    hitLayer.addEventListener("pointerleave", hide);
+  }
+
+  let lastRowsSignature = "";
+
+  function load() {
+    fetch(CSV_URL, { cache: "no-store" })
+      .then(res => {
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        return res.text();
+      })
+      .then(text => {
+        const rows = parseCSV(text);
+        if (rows.length === 0) throw new Error("No data rows found in CSV");
+        const sig = rows.length + "|" + rows[rows.length - 1].ts;
+        if (sig === lastRowsSignature) return; // no new data, keep current render
+        lastRowsSignature = sig;
+        renderHero(rows);
+        renderChart(rows);
+        renderTable(rows);
+      })
+      .catch(err => {
+        const heroCard = document.getElementById("hero-card");
+        if (heroCard.querySelector(".status")) {
+          heroCard.innerHTML = `<div class="status">Couldn't load data: ${err.message}</div>`;
+        }
+        console.error(err);
+      });
+  }
+
+  load();
+  setInterval(load, REFRESH_MS);
+})();
+</script>
+</body>
+</html>
