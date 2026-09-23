@@ -33,7 +33,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add total_value_history.csv
+          git add total_value_history.csv latest.json
           if ! git diff --cached --quiet; then
             git commit -m "Log total value $(date -u +%Y-%m-%dT%H:%M:%SZ)"
             git push

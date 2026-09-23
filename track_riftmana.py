@@ -21,6 +21,7 @@ Intended to run hourly via the GitHub Actions workflow in
 
 import argparse
 import csv
+import json
 import re
 import sys
 import time
@@ -32,6 +33,7 @@ from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeo
 URL = "https://riftmana.com/collection/?user=moose"
 SCRIPT_DIR = Path(__file__).resolve().parent
 CSV_PATH = SCRIPT_DIR / "total_value_history.csv"
+LATEST_JSON_PATH = SCRIPT_DIR / "latest.json"
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
     "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
@@ -93,7 +95,7 @@ def try_extract_total_value(browser) -> str | None:
         context.close()
 
 
-def extract_total_value(browser, attempts: int = 3, delay_seconds: int = 10) -> str:
+def extract_total_value(browser, attempts: int = 5, delay_seconds: int = 15) -> str:
     for attempt in range(1, attempts + 1):
         value = try_extract_total_value(browser)
         if value:
@@ -120,6 +122,21 @@ def append_to_csv(timestamp: str, raw_value: str, numeric_value: float | None) -
         writer.writerow([timestamp, raw_value, numeric_value])
 
 
+def write_latest_json(timestamp: str, raw_value: str, numeric_value: float | None) -> None:
+    LATEST_JSON_PATH.write_text(
+        json.dumps(
+            {
+                "total_value": numeric_value,
+                "total_value_raw": raw_value,
+                "updated_at": timestamp,
+            },
+            indent=2,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+
+
 def to_numeric(raw_value: str) -> float | None:
     cleaned = raw_value.replace("$", "").replace(",", "").strip()
     try:
@@ -133,14 +150,21 @@ def main() -> int:
     parser.add_argument(
         "--attempts",
         type=int,
-        default=3,
+        default=5,
         help="How many times to retry loading the page if the Cloudflare "
-        "challenge doesn't clear (default: 3).",
+        "challenge doesn't clear (default: 5).",
     )
     args = parser.parse_args()
 
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
+        # --disable-blink-features=AutomationControlled hides the
+        # navigator.webdriver flag that Playwright's default Chromium
+        # otherwise exposes, which is one of the signals Cloudflare's bot
+        # management checks before issuing its challenge.
+        browser = p.chromium.launch(
+            headless=True,
+            args=["--disable-blink-features=AutomationControlled"],
+        )
         try:
             raw_value = extract_total_value(browser, attempts=args.attempts)
         except RuntimeError as e:
@@ -152,6 +176,7 @@ def main() -> int:
     timestamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
     numeric_value = to_numeric(raw_value)
     append_to_csv(timestamp, raw_value, numeric_value)
+    write_latest_json(timestamp, raw_value, numeric_value)
     print(f"[{timestamp}] Total Value = {raw_value} -> logged to {CSV_PATH.name}")
     return 0
 
