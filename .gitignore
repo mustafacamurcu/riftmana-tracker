@@ -3,3 +3,4 @@ __pycache__/
 .venv/
 venv/
 total_value_history.png
+logs/

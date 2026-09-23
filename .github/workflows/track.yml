@@ -1,9 +1,13 @@
 name: Track riftmana.com Total Value
 
+# Not on a schedule: GitHub's hosted runner IPs consistently get a hard
+# Cloudflare challenge that headless Playwright can't clear (confirmed - every
+# attempt failed across two separate scheduled runs, while the same script
+# passes instantly from a home IP). The real hourly job runs locally via
+# Windows Task Scheduler (see scripts/run_and_publish.ps1) and pushes here
+# directly. This workflow is kept only for manual/debug runs.
 on:
-  schedule:
-    - cron: "0 * * * *" # every hour, on the hour (UTC)
-  workflow_dispatch: {} # lets you trigger a run manually from the Actions tab
+  workflow_dispatch: {}
 
 permissions:
   contents: write
