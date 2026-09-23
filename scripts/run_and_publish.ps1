@@ -23,7 +23,8 @@ Log "--- run start ---"
 
 git pull --rebase
 if ($LASTEXITCODE -ne 0) {
-    Log "WARNING: git pull --rebase exited with code $LASTEXITCODE"
+    Log "WARNING: git pull --rebase exited with code $LASTEXITCODE - aborting rebase to leave repo clean"
+    git rebase --abort 2>$null
 }
 
 try {
