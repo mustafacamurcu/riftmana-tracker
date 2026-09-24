@@ -24,7 +24,15 @@ Log "--- run start ---"
 git pull --rebase
 if ($LASTEXITCODE -ne 0) {
     Log "WARNING: git pull --rebase exited with code $LASTEXITCODE - aborting rebase to leave repo clean"
-    git rebase --abort 2>$null
+    # No stderr redirection here: in Windows PowerShell 5.1, redirecting a native
+    # command's stderr (even to $null) wraps it as a terminating error under
+    # $ErrorActionPreference = "Stop", which silently killed this whole script
+    # the last two times a rebase actually needed aborting (no further log
+    # output, no exception message - just a dead process and LastTaskResult=1).
+    git rebase --abort
+    if ($LASTEXITCODE -ne 0) {
+        Log "WARNING: git rebase --abort exited with code $LASTEXITCODE (harmless if there was nothing to abort)"
+    }
 }
 
 try {
