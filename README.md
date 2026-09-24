@@ -31,6 +31,14 @@ Android home-screen widget.
   (Kotlin) with a home-screen widget that polls `latest.json` on a 30-minute
   WorkManager schedule (or on tap) and shows the current value. See
   [android-widget/README.md](android-widget/README.md) to build/install it.
+- [track_card_prices.py](track_card_prices.py) scrapes a price/quantity
+  snapshot for every *owned* card (not the full ~1400-card catalog) each
+  hour, via the same AJAX endpoint the site's own collection page uses
+  internally. Appends to `card_price_history.csv` and computes the biggest
+  24h value movers into `movers.json`, which the chart page renders as a
+  "Today's Biggest Movers" gainers/losers section. Best-effort: if this step
+  fails, the core Total Value tracking still publishes normally (see
+  `run_and_publish.ps1`).
 - [plot_history.py](plot_history.py) is an optional local helper to chart
   `total_value_history.csv` from the command line
   (`pip install matplotlib pandas`, then `python plot_history.py`).
@@ -61,3 +69,11 @@ Android home-screen widget.
   page text, so it isn't tied to exact CSS class names and should survive
   minor styling changes to the site.
 - Logs from the scheduled task: `logs/run_and_publish.log`.
+- The per-card AJAX endpoint (`shared_collection_load_cards`) only reliably
+  passes Cloudflare when it's the *first* `admin-ajax.php` request of a fresh
+  browser session — any follow-up AJAX call in that same session gets
+  challenge-blocked almost every time, regardless of pacing. Loading the page
+  at `?user=moose&set=all` (rather than clicking a set after the page's own
+  `load_sets` call has already fired) makes the cards call that first
+  request. `track_card_prices.py` opens a brand-new browser context per
+  retry attempt specifically to get a fresh "first request" each time.
