@@ -121,6 +121,31 @@
 
   .status { font-size: 13px; color: var(--text-muted); padding: 32px 0; text-align: center; }
 
+  .movers-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 12px; }
+  .movers-header h2 { font-size: 15px; font-weight: 600; color: var(--text-primary); margin: 0; }
+  .movers-window { font-size: 12px; color: var(--text-muted); }
+  .movers-columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+  .movers-col-title {
+    font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.02em;
+    color: var(--text-muted); margin: 0 0 8px;
+  }
+  .mover-row {
+    display: flex; align-items: center; justify-content: space-between; gap: 10px;
+    padding: 8px 0; border-bottom: 1px solid var(--border);
+  }
+  .mover-row:last-child { border-bottom: none; }
+  .mover-id { min-width: 0; }
+  .mover-name {
+    font-size: 13px; font-weight: 600; color: var(--text-primary);
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .mover-meta { font-size: 11px; color: var(--text-muted); }
+  .mover-change { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .mover-delta { font-size: 13px; font-weight: 600; }
+  .mover-delta.up { color: var(--good); }
+  .mover-delta.down { color: var(--critical); }
+  .mover-value { font-size: 11px; color: var(--text-muted); }
+
   details.table-view { margin-top: 4px; }
   details.table-view summary {
     cursor: pointer; font-size: 13px; color: var(--text-secondary);
@@ -161,8 +186,18 @@
     </details>
   </div>
 
+  <div class="card">
+    <div class="movers-header">
+      <h2>Today's Biggest Movers</h2>
+      <span class="movers-window" id="movers-window"></span>
+    </div>
+    <div id="movers-body">
+      <div class="status">Loading…</div>
+    </div>
+  </div>
+
   <footer>
-    Logged hourly by a scheduled <a href="https://github.com/mustafacamurcu/riftmana-tracker" target="_blank" rel="noopener">GitHub Actions job</a>.
+    Logged hourly by a <a href="https://github.com/mustafacamurcu/riftmana-tracker" target="_blank" rel="noopener">scheduled local job</a>.
     Source: <a href="https://riftmana.com/collection/?user=moose" target="_blank" rel="noopener">riftmana.com</a>.
   </footer>
 </div>
@@ -172,6 +207,7 @@
   "use strict";
 
   const CSV_URL = "total_value_history.csv";
+  const MOVERS_URL = "movers.json";
   const REFRESH_MS = 5 * 60 * 1000;
 
   function parseCSV(text) {
@@ -403,6 +439,115 @@
     hitLayer.addEventListener("pointerleave", hide);
   }
 
+  function fmtSignedMoney(v) {
+    const sign = v > 0 ? "+" : v < 0 ? "−" : "";
+    return sign + fmtMoney(Math.abs(v));
+  }
+
+  function moverRowHtml(m) {
+    const isUp = m.value_delta > 0;
+    const arrow = isUp ? "▲" : "▼";
+    const pct = m.value_delta_pct === null || m.value_delta_pct === undefined
+      ? ""
+      : ` (${isUp ? "+" : ""}${m.value_delta_pct.toFixed(1)}%)`;
+    const meta = [m.set, m.rarity].filter(Boolean).join(" · ");
+    const row = document.createElement("div");
+    row.className = "mover-row";
+
+    const idDiv = document.createElement("div");
+    idDiv.className = "mover-id";
+    const nameDiv = document.createElement("div");
+    nameDiv.className = "mover-name";
+    nameDiv.textContent = m.card_name || m.card_id;
+    const metaDiv = document.createElement("div");
+    metaDiv.className = "mover-meta";
+    metaDiv.textContent = meta;
+    idDiv.appendChild(nameDiv);
+    idDiv.appendChild(metaDiv);
+
+    const changeDiv = document.createElement("div");
+    changeDiv.className = "mover-change";
+    const deltaDiv = document.createElement("div");
+    deltaDiv.className = "mover-delta " + (isUp ? "up" : "down");
+    deltaDiv.textContent = `${arrow} ${fmtSignedMoney(m.value_delta)}${pct}`;
+    const valueDiv = document.createElement("div");
+    valueDiv.className = "mover-value";
+    valueDiv.textContent = `now ${fmtMoney(m.value_now)}`;
+    changeDiv.appendChild(deltaDiv);
+    changeDiv.appendChild(valueDiv);
+
+    row.appendChild(idDiv);
+    row.appendChild(changeDiv);
+    return row;
+  }
+
+  function renderMovers(data) {
+    const body = document.getElementById("movers-body");
+    const windowLabel = document.getElementById("movers-window");
+    const gainers = data.gainers || [];
+    const losers = data.losers || [];
+
+    if (gainers.length === 0 && losers.length === 0) {
+      windowLabel.textContent = "";
+      body.innerHTML = '<div class="status">Not enough data yet — check back after ~24 hours of hourly snapshots.</div>';
+      return;
+    }
+
+    windowLabel.textContent = `Last ${data.window_hours || 24}h`;
+
+    const columns = document.createElement("div");
+    columns.className = "movers-columns";
+
+    const gainCol = document.createElement("div");
+    const gainTitle = document.createElement("p");
+    gainTitle.className = "movers-col-title";
+    gainTitle.textContent = "Gainers";
+    gainCol.appendChild(gainTitle);
+    if (gainers.length === 0) {
+      const none = document.createElement("div");
+      none.className = "mover-meta";
+      none.textContent = "None";
+      gainCol.appendChild(none);
+    } else {
+      gainers.forEach(m => gainCol.appendChild(moverRowHtml(m)));
+    }
+
+    const loseCol = document.createElement("div");
+    const loseTitle = document.createElement("p");
+    loseTitle.className = "movers-col-title";
+    loseTitle.textContent = "Losers";
+    loseCol.appendChild(loseTitle);
+    if (losers.length === 0) {
+      const none = document.createElement("div");
+      none.className = "mover-meta";
+      none.textContent = "None";
+      loseCol.appendChild(none);
+    } else {
+      losers.forEach(m => loseCol.appendChild(moverRowHtml(m)));
+    }
+
+    columns.appendChild(gainCol);
+    columns.appendChild(loseCol);
+    body.innerHTML = "";
+    body.appendChild(columns);
+  }
+
+  function loadMovers() {
+    fetch(MOVERS_URL, { cache: "no-store" })
+      .then(res => {
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        return res.json();
+      })
+      .then(data => renderMovers(data))
+      .catch(err => {
+        const body = document.getElementById("movers-body");
+        if (body.querySelector(".status")) {
+          body.innerHTML = `<div class="status">Couldn't load movers: ${err.message}</div>`;
+        }
+        console.error(err);
+      });
+  }
+
   let lastRowsSignature = "";
 
   function load() {
@@ -431,7 +576,9 @@
   }
 
   load();
+  loadMovers();
   setInterval(load, REFRESH_MS);
+  setInterval(loadMovers, REFRESH_MS);
 })();
 </script>
 </body>
