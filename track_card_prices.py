@@ -188,6 +188,19 @@ def compute_movers(current_rows: list[dict], history_rows: list[dict], now: date
         if not baseline_entry:
             continue
         baseline = baseline_entry[1]
+
+        # If you bought or sold copies since the baseline snapshot, the value
+        # delta reflects that collection change, not a market price move -
+        # showing it as a "mover" would be misleading, so skip it. (A card
+        # that's fully sold off just disappears from current_rows on its own
+        # since only owned cards are scraped; a newly-acquired card has no
+        # baseline at all and is already skipped above.)
+        if (
+            int(baseline["normal_owned"]) != row["normal_owned"]
+            or int(baseline["foil_owned"]) != row["foil_owned"]
+        ):
+            continue
+
         value_prior = float(baseline["value"])
         value_now = row["value"]
         if value_prior == 0 and value_now == 0:
