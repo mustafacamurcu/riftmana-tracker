@@ -1,6 +1,6 @@
 {
     "apkUrl":  "https://mustafacamurcu.github.io/riftmana-tracker/releases/riftmana-widget.apk",
-    "versionCode":  3,
-    "versionName":  "1.2",
-    "notes":  "Test release to validate the self-update pipeline end to end."
+    "versionCode":  4,
+    "versionName":  "1.3",
+    "notes":  "Adds self-updating (no more manual reinstalls after this one) and shows the change vs. the last hourly reading, colored green/red."
 }
