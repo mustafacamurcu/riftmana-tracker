@@ -3,4 +3,6 @@
     <color name="widget_text_primary">#0B0B0B</color>
     <color name="widget_text_muted">#898781</color>
     <color name="brand_blue">#2A78D6</color>
+    <color name="delta_good">#006300</color>
+    <color name="delta_critical">#D03B3B</color>
 </resources>

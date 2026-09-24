@@ -5,7 +5,9 @@ import android.appwidget.AppWidgetManager
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
+import android.view.View
 import android.widget.RemoteViews
+import androidx.core.content.ContextCompat
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
 import org.json.JSONObject
@@ -81,9 +83,25 @@ class RefreshWorker(context: Context, params: WorkerParameters) :
             if (cached != null) {
                 views.setTextViewText(R.id.widget_value, cached.displayValue())
                 views.setTextViewText(R.id.widget_subtitle, cached.relativeUpdatedAt())
+
+                val deltaLabel = cached.deltaLabel()
+                val delta = cached.delta()
+                if (deltaLabel != null && delta != null) {
+                    views.setViewVisibility(R.id.widget_delta, View.VISIBLE)
+                    views.setTextViewText(R.id.widget_delta, deltaLabel)
+                    val colorRes = when {
+                        delta > 0 -> R.color.delta_good
+                        delta < 0 -> R.color.delta_critical
+                        else -> R.color.widget_text_muted
+                    }
+                    views.setTextColor(R.id.widget_delta, ContextCompat.getColor(context, colorRes))
+                } else {
+                    views.setViewVisibility(R.id.widget_delta, View.GONE)
+                }
             } else {
                 views.setTextViewText(R.id.widget_value, "--")
                 views.setTextViewText(R.id.widget_subtitle, "Tap to load")
+                views.setViewVisibility(R.id.widget_delta, View.GONE)
             }
 
             val refreshIntent = Intent(context, ValueWidgetProvider::class.java).apply {

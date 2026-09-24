@@ -36,7 +36,8 @@ class MainActivity : Activity() {
         fun render() {
             val cached = WidgetPrefs.load(this)
             statusText.text = if (cached != null) {
-                "${cached.displayValue()}\n${cached.relativeUpdatedAt()}"
+                val deltaLine = cached.deltaLabel()?.trim()?.let { "\n$it" } ?: ""
+                "${cached.displayValue()}$deltaLine\n${cached.relativeUpdatedAt()}"
             } else {
                 "No data yet.\nAdd the widget to your home screen, or tap Refresh."
             }
