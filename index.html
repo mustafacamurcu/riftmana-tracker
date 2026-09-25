@@ -140,6 +140,10 @@
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   }
   .mover-meta { font-size: 11px; color: var(--text-muted); }
+  .mover-printing {
+    font-size: 11px; color: var(--text-secondary); margin-top: 3px;
+    font-variant-numeric: tabular-nums;
+  }
   .mover-change { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
   .mover-delta { font-size: 13px; font-weight: 600; }
   .mover-delta.up { color: var(--good); }
@@ -444,6 +448,23 @@
     return sign + fmtMoney(Math.abs(v));
   }
 
+  function printingDetailText(m) {
+    // Per-unit price change for whichever printing(s) are owned - this is
+    // the number that matches what riftmana.com itself shows per card, as
+    // distinct from value_now/value_delta below which are totals across
+    // however many copies are owned (a 6x-owned common can move 50% in
+    // value_delta_pct off a one-cent price change - the per-unit price is
+    // what makes that legible rather than looking like a data error).
+    const parts = [];
+    if (m.normal_owned > 0) {
+      parts.push(`Normal ×${m.normal_owned}: ${fmtMoney(m.normal_price_prior)} → ${fmtMoney(m.normal_price_now)}`);
+    }
+    if (m.foil_owned > 0) {
+      parts.push(`Foil ×${m.foil_owned}: ${fmtMoney(m.foil_price_prior)} → ${fmtMoney(m.foil_price_now)}`);
+    }
+    return parts.join("   ");
+  }
+
   function moverRowHtml(m) {
     const isUp = m.value_delta > 0;
     const arrow = isUp ? "▲" : "▼";
@@ -464,6 +485,13 @@
     metaDiv.textContent = meta;
     idDiv.appendChild(nameDiv);
     idDiv.appendChild(metaDiv);
+    const printingText = printingDetailText(m);
+    if (printingText) {
+      const printingDiv = document.createElement("div");
+      printingDiv.className = "mover-printing";
+      printingDiv.textContent = printingText;
+      idDiv.appendChild(printingDiv);
+    }
 
     const changeDiv = document.createElement("div");
     changeDiv.className = "mover-change";
@@ -472,7 +500,8 @@
     deltaDiv.textContent = `${arrow} ${fmtSignedMoney(m.value_delta)}${pct}`;
     const valueDiv = document.createElement("div");
     valueDiv.className = "mover-value";
-    valueDiv.textContent = `now ${fmtMoney(m.value_now)}`;
+    const totalQty = m.normal_owned + m.foil_owned;
+    valueDiv.textContent = `${fmtMoney(m.value_now)} total (×${totalQty})`;
     changeDiv.appendChild(deltaDiv);
     changeDiv.appendChild(valueDiv);
 
