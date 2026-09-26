@@ -10436,3 +10436,512 @@ timestamp_utc,card_id,card_name,set,set_slug,rarity,normal_owned,foil_owned,norm
 2026-09-25T23:22:02+00:00,ven-r02a,Calm Rune,Vendetta,vendetta,Showcase,0,1,0.0,5.8,5.8
 2026-09-25T23:22:02+00:00,ven-r04a,Body Rune,Vendetta,vendetta,Showcase,0,1,0.0,4.82,4.82
 2026-09-25T23:22:02+00:00,ven-sp4,Sett Brawler,Vendetta,vendetta,Showcase,0,1,0.0,12.78,12.78
+2026-09-26T07:44:49+00:00,ogn-xxx,Buff,Origins,origins,Common,1,0,0.18,0.31,0.18
+2026-09-26T07:44:49+00:00,ogn-001,Blazing Scorcher,Origins,origins,Common,4,0,0.05,0.22,0.2
+2026-09-26T07:44:49+00:00,ogn-002,Brazen Buccaneer,Origins,origins,Common,6,0,0.05,0.16,0.3
+2026-09-26T07:44:49+00:00,ogn-003,Chemtech Enforcer,Origins,origins,Common,6,0,0.04,0.15,0.24
+2026-09-26T07:44:49+00:00,ogn-004,Cleave,Origins,origins,Common,6,0,0.12,0.38,0.72
+2026-09-26T07:44:49+00:00,ogn-005,Disintegrate,Origins,origins,Common,4,0,0.06,0.23,0.24
+2026-09-26T07:44:49+00:00,ogn-006,Flame Chompers,Origins,origins,Common,6,0,0.09,0.23,0.54
+2026-09-26T07:44:49+00:00,ogn-007,Fury Rune,Origins,origins,Common,11,0,0.1,0.0,1.1
+2026-09-26T07:44:49+00:00,ogn-008,Get Excited!,Origins,origins,Common,2,0,0.06,0.25,0.12
+2026-09-26T07:44:49+00:00,ogn-009,Hextech Ray,Origins,origins,Common,2,0,0.13,0.63,0.26
+2026-09-26T07:44:49+00:00,ogn-010,Legion Rearguard,Origins,origins,Common,6,0,0.1,0.3,0.6
+2026-09-26T07:44:49+00:00,ogn-011,Magma Wurm,Origins,origins,Common,5,0,0.05,0.17,0.25
+2026-09-26T07:44:49+00:00,ogn-012,Noxus Hopeful,Origins,origins,Common,6,0,0.56,5.07,3.36
+2026-09-26T07:44:49+00:00,ogn-013,Pouty Poro,Origins,origins,Common,6,0,0.08,0.36,0.48
+2026-09-26T07:44:49+00:00,ogn-014,Sky Splitter,Origins,origins,Common,6,0,0.09,0.38,0.54
+2026-09-26T07:44:49+00:00,ogn-015,Captain Farron,Origins,origins,Uncommon,6,0,0.1,0.29,0.6
+2026-09-26T07:44:49+00:00,ogn-016,Dangerous Duo,Origins,origins,Uncommon,6,0,0.05,0.21,0.3
+2026-09-26T07:44:49+00:00,ogn-017,Iron Ballista,Origins,origins,Uncommon,6,0,0.16,0.44,0.96
+2026-09-26T07:44:49+00:00,ogn-018,Noxus Saboteur,Origins,origins,Uncommon,6,0,0.1,0.28,0.6
+2026-09-26T07:44:49+00:00,ogn-019,Raging Soul,Origins,origins,Uncommon,6,0,0.05,0.28,0.3
+2026-09-26T07:44:49+00:00,ogn-020,Scrapyard Champion,Origins,origins,Uncommon,6,0,0.14,0.3,0.84
+2026-09-26T07:44:49+00:00,ogn-021,Sun Disc,Origins,origins,Uncommon,6,0,0.17,0.58,1.02
+2026-09-26T07:44:49+00:00,ogn-022,Thermo Beam,Origins,origins,Uncommon,3,0,0.33,2.21,0.99
+2026-09-26T07:44:49+00:00,ogn-023,Unlicensed Armory,Origins,origins,Uncommon,1,0,0.14,0.28,0.14
+2026-09-26T07:44:49+00:00,ogn-042,Calm Rune,Origins,origins,Common,11,0,0.14,0.5,1.54
+2026-09-26T07:44:49+00:00,ogn-043,Charm,Origins,origins,Common,3,0,0.49,4.14,1.47
+2026-09-26T07:44:49+00:00,ogn-044,Clockwork Keeper,Origins,origins,Common,6,0,0.09,0.31,0.54
+2026-09-26T07:44:49+00:00,ogn-045,Defy,Origins,origins,Common,6,0,2.12,5.9,12.72
+2026-09-26T07:44:49+00:00,ogn-046,En Garde,Origins,origins,Common,4,0,0.27,0.63,1.08
+2026-09-26T07:44:49+00:00,ogn-048,Meditation,Origins,origins,Common,6,0,0.15,0.35,0.9
+2026-09-26T07:44:49+00:00,ogn-049,Playful Phantom,Origins,origins,Common,6,0,0.02,0.1,0.12
+2026-09-26T07:44:49+00:00,ogn-050,Rune Prison,Origins,origins,Common,6,0,0.11,0.3,0.66
+2026-09-26T07:44:49+00:00,ogn-051,Solari Shieldbearer,Origins,origins,Common,6,0,0.08,0.2,0.48
+2026-09-26T07:44:49+00:00,ogn-052,Stalwart Poro,Origins,origins,Common,7,0,0.12,0.39,0.84
+2026-09-26T07:44:49+00:00,ogn-053,Stand United,Origins,origins,Common,6,0,0.07,0.2,0.42
+2026-09-26T07:44:49+00:00,ogn-054,Sunlit Guardian,Origins,origins,Common,2,0,0.11,0.22,0.22
+2026-09-26T07:44:49+00:00,ogn-055,Wielder of Water,Origins,origins,Common,6,0,0.06,0.21,0.36
+2026-09-26T07:44:49+00:00,ogn-056,Adaptatron,Origins,origins,Uncommon,3,0,0.28,2.51,0.84
+2026-09-26T07:44:49+00:00,ogn-057,Block,Origins,origins,Uncommon,6,0,0.22,0.77,1.32
+2026-09-26T07:44:49+00:00,ogn-058,Discipline,Origins,origins,Uncommon,6,0,0.88,2.02,5.28
+2026-09-26T07:44:49+00:00,ogn-059,Eclipse Herald,Origins,origins,Uncommon,6,0,0.11,0.24,0.66
+2026-09-26T07:44:49+00:00,ogn-060,Mask of Foresight,Origins,origins,Uncommon,1,0,0.68,4.75,0.68
+2026-09-26T07:44:49+00:00,ogn-061,Poro Herder,Origins,origins,Uncommon,6,0,0.15,0.35,0.9
+2026-09-26T07:44:49+00:00,ogn-062,Reinforce,Origins,origins,Uncommon,3,0,0.1,0.44,0.3
+2026-09-26T07:44:49+00:00,ogn-063,Spirit's Refuge,Origins,origins,Uncommon,6,0,0.16,0.43,0.96
+2026-09-26T07:44:49+00:00,ogn-065,Wizened Elder,Origins,origins,Uncommon,6,0,0.07,0.29,0.42
+2026-09-26T07:44:49+00:00,ogn-067,Blitzcrank Impassive,Origins,origins,Rare,0,1,0.0,2.34,2.34
+2026-09-26T07:44:49+00:00,ogn-073,Sona Harmonious,Origins,origins,Rare,0,3,0.0,2.03,6.09
+2026-09-26T07:44:49+00:00,ogn-077,Zhonya's Hourglass,Origins,origins,Rare,0,1,0.0,15.37,15.37
+2026-09-26T07:44:49+00:00,ogn-083,Consult the Past,Origins,origins,Common,4,0,0.19,0.49,0.76
+2026-09-26T07:44:49+00:00,ogn-084,Eager Apprentice,Origins,origins,Common,6,0,0.06,0.23,0.36
+2026-09-26T07:44:49+00:00,ogn-085,Falling Comet,Origins,origins,Common,6,0,0.13,0.33,0.78
+2026-09-26T07:44:49+00:00,ogn-086,Jeweled Colossus,Origins,origins,Common,6,0,0.02,0.14,0.12
+2026-09-26T07:44:49+00:00,ogn-087,Lecturing Yordle,Origins,origins,Common,4,0,0.14,0.55,0.56
+2026-09-26T07:44:49+00:00,ogn-088,Mega-Mech,Origins,origins,Common,6,0,0.05,0.18,0.3
+2026-09-26T07:44:49+00:00,ogn-089,Mind Rune,Origins,origins,Common,11,0,0.12,16.5,1.32
+2026-09-26T07:44:49+00:00,ogn-090,Orb of Regret,Origins,origins,Common,6,0,0.08,0.21,0.48
+2026-09-26T07:44:49+00:00,ogn-091,Pit Crew,Origins,origins,Common,6,0,0.15,0.49,0.9
+2026-09-26T07:44:49+00:00,ogn-092,Riptide Rex,Origins,origins,Common,4,0,0.12,0.25,0.48
+2026-09-26T07:44:49+00:00,ogn-093,Smoke Screen,Origins,origins,Common,6,0,0.15,0.84,0.9
+2026-09-26T07:44:49+00:00,ogn-094,Sprite Call,Origins,origins,Common,3,0,0.14,0.36,0.42
+2026-09-26T07:44:49+00:00,ogn-095,Stupefy,Origins,origins,Common,6,0,0.27,1.04,1.62
+2026-09-26T07:44:49+00:00,ogn-096,Watchful Sentry,Origins,origins,Common,3,0,0.17,1.41,0.51
+2026-09-26T07:44:49+00:00,ogn-097,Blastcone Fae,Origins,origins,Uncommon,6,0,0.15,0.41,0.9
+2026-09-26T07:44:49+00:00,ogn-098,Energy Conduit,Origins,origins,Uncommon,6,0,0.17,0.4,1.02
+2026-09-26T07:44:49+00:00,ogn-099,Garbage Grabber,Origins,origins,Uncommon,6,0,0.22,1.24,1.32
+2026-09-26T07:44:49+00:00,ogn-100,Gemcraft Seer,Origins,origins,Uncommon,6,0,0.12,0.26,0.72
+2026-09-26T07:44:49+00:00,ogn-101,Mushroom Pouch,Origins,origins,Uncommon,6,0,0.13,0.32,0.78
+2026-09-26T07:44:49+00:00,ogn-102,Portal Rescue,Origins,origins,Uncommon,3,0,0.17,0.35,0.51
+2026-09-26T07:44:49+00:00,ogn-103,Ravenbloom Student,Origins,origins,Uncommon,9,0,0.34,0.57,3.06
+2026-09-26T07:44:49+00:00,ogn-105,Singularity,Origins,origins,Uncommon,2,0,0.73,4.07,1.46
+2026-09-26T07:44:49+00:00,ogn-106,Sprite Mother,Origins,origins,Uncommon,2,0,0.21,0.53,0.42
+2026-09-26T07:44:49+00:00,ogn-124,Arena Bar,Origins,origins,Common,3,0,0.07,0.3,0.21
+2026-09-26T07:44:49+00:00,ogn-125,Bilgewater Bully,Origins,origins,Common,6,0,0.04,0.15,0.24
+2026-09-26T07:44:49+00:00,ogn-126,Body Rune,Origins,origins,Common,11,0,0.12,0.0,1.32
+2026-09-26T07:44:49+00:00,ogn-127,Cannon Barrage,Origins,origins,Common,4,0,0.11,0.22,0.44
+2026-09-26T07:44:49+00:00,ogn-129,Confront,Origins,origins,Common,6,0,0.06,0.26,0.36
+2026-09-26T07:44:49+00:00,ogn-130,Crackshot Corsair,Origins,origins,Common,6,0,0.06,0.15,0.36
+2026-09-26T07:44:49+00:00,ogn-131,Dune Drake,Origins,origins,Common,4,0,0.06,0.27,0.24
+2026-09-26T07:44:49+00:00,ogn-133,Flurry of Blades,Origins,origins,Common,6,0,0.13,0.29,0.78
+2026-09-26T07:44:49+00:00,ogn-134,Mobilize,Origins,origins,Common,3,0,0.14,0.73,0.42
+2026-09-26T07:44:49+00:00,ogn-135,Pakaa Cub,Origins,origins,Common,6,0,0.09,0.22,0.54
+2026-09-26T07:44:49+00:00,ogn-136,Pit Rookie,Origins,origins,Common,4,0,0.18,1.41,0.72
+2026-09-26T07:44:49+00:00,ogn-137,Stormclaw Ursine,Origins,origins,Common,5,0,0.04,0.15,0.2
+2026-09-26T07:44:49+00:00,ogn-138,Catalyst of Aeons,Origins,origins,Uncommon,3,0,0.4,3.73,1.2
+2026-09-26T07:44:49+00:00,ogn-139,Cithria of Cloudfield,Origins,origins,Uncommon,6,0,0.1,0.22,0.6
+2026-09-26T07:44:49+00:00,ogn-140,Herald of Scales,Origins,origins,Uncommon,2,0,0.24,0.93,0.48
+2026-09-26T07:44:49+00:00,ogn-141,Kinkou Monk,Origins,origins,Uncommon,6,0,0.24,0.5,1.44
+2026-09-26T07:44:49+00:00,ogn-142,Mountain Drake,Origins,origins,Uncommon,6,0,0.09,0.33,0.54
+2026-09-26T07:44:49+00:00,ogn-143,Pirate's Haven,Origins,origins,Uncommon,6,0,0.13,0.29,0.78
+2026-09-26T07:44:49+00:00,ogn-144,Spoils of War,Origins,origins,Uncommon,6,0,0.14,0.39,0.84
+2026-09-26T07:44:49+00:00,ogn-146,Wallop,Origins,origins,Uncommon,1,0,0.16,0.36,0.16
+2026-09-26T07:44:49+00:00,ogn-147,Wildclaw Shaman,Origins,origins,Uncommon,6,0,0.08,0.27,0.48
+2026-09-26T07:44:49+00:00,ogn-165,Cemetery Attendant,Origins,origins,Common,2,0,0.05,0.23,0.1
+2026-09-26T07:44:49+00:00,ogn-166,Chaos Rune,Origins,origins,Common,11,0,0.16,11.17,1.76
+2026-09-26T07:44:49+00:00,ogn-167,Ember Monk,Origins,origins,Common,9,0,0.12,0.26,1.08
+2026-09-26T07:44:49+00:00,ogn-168,Fight or Flight,Origins,origins,Common,5,0,0.08,0.2,0.4
+2026-09-26T07:44:49+00:00,ogn-169,Gust,Origins,origins,Common,4,0,0.21,0.7,0.84
+2026-09-26T07:44:49+00:00,ogn-170,Morbid Return,Origins,origins,Common,6,0,0.09,0.31,0.54
+2026-09-26T07:44:49+00:00,ogn-171,Mystic Poro,Origins,origins,Common,6,0,0.11,0.26,0.66
+2026-09-26T07:44:49+00:00,ogn-172,Rebuke,Origins,origins,Common,4,0,0.27,1.36,1.08
+2026-09-26T07:44:49+00:00,ogn-173,Ride the Wind,Origins,origins,Common,1,0,0.88,8.59,0.88
+2026-09-26T07:44:49+00:00,ogn-174,Sai Scout,Origins,origins,Common,6,0,0.05,0.12,0.3
+2026-09-26T07:44:49+00:00,ogn-175,Shipyard Skulker,Origins,origins,Common,6,0,0.07,0.18,0.42
+2026-09-26T07:44:49+00:00,ogn-176,Sneaky Deckhand,Origins,origins,Common,5,0,0.16,0.75,0.8
+2026-09-26T07:44:49+00:00,ogn-177,Stealthy Pursuer,Origins,origins,Common,3,0,0.08,0.19,0.24
+2026-09-26T07:44:49+00:00,ogn-178,Undercover Agent,Origins,origins,Common,6,0,0.02,0.14,0.12
+2026-09-26T07:44:49+00:00,ogn-179,Acceptable Losses,Origins,origins,Uncommon,6,0,0.57,3.43,3.42
+2026-09-26T07:44:49+00:00,ogn-180,Fading Memories,Origins,origins,Uncommon,6,0,0.12,0.61,0.72
+2026-09-26T07:44:49+00:00,ogn-181,Pack of Wonders,Origins,origins,Uncommon,1,0,0.49,3.45,0.49
+2026-09-26T07:44:49+00:00,ogn-182,Scrapheap,Origins,origins,Uncommon,3,0,0.11,0.63,0.33
+2026-09-26T07:44:49+00:00,ogn-184,The Syren,Origins,origins,Uncommon,5,0,0.16,0.62,0.8
+2026-09-26T07:44:49+00:00,ogn-185,Traveling Merchant,Origins,origins,Uncommon,9,0,0.24,5.0,2.16
+2026-09-26T07:44:49+00:00,ogn-187,Whirlwind,Origins,origins,Uncommon,5,0,0.16,0.32,0.8
+2026-09-26T07:44:49+00:00,ogn-188,Zaunite Bouncer,Origins,origins,Uncommon,6,0,0.12,0.27,0.72
+2026-09-26T07:44:49+00:00,ogn-206,Back to Back,Origins,origins,Common,1,0,0.05,0.17,0.05
+2026-09-26T07:44:49+00:00,ogn-207,Call to Glory,Origins,origins,Common,3,0,0.18,0.48,0.54
+2026-09-26T07:44:49+00:00,ogn-208,Cruel Patron,Origins,origins,Common,5,0,0.04,0.21,0.2
+2026-09-26T07:44:49+00:00,ogn-209,Cull the Weak,Origins,origins,Common,5,0,0.48,1.78,2.4
+2026-09-26T07:44:49+00:00,ogn-210,Daring Poro,Origins,origins,Common,4,0,0.1,0.27,0.4
+2026-09-26T07:44:49+00:00,ogn-211,Faithful Manufactor,Origins,origins,Common,4,0,0.13,0.32,0.52
+2026-09-26T07:44:49+00:00,ogn-212,Forge of the Future,Origins,origins,Common,6,0,0.1,0.29,0.6
+2026-09-26T07:44:49+00:00,ogn-213,Hidden Blade,Origins,origins,Common,6,0,0.95,2.48,5.7
+2026-09-26T07:44:49+00:00,ogn-214,Order Rune,Origins,origins,Common,11,0,0.11,10.0,1.21
+2026-09-26T07:44:49+00:00,ogn-215,Petty Officer,Origins,origins,Common,6,0,0.05,0.16,0.3
+2026-09-26T07:44:49+00:00,ogn-216,Soaring Scout,Origins,origins,Common,2,0,0.18,1.38,0.36
+2026-09-26T07:44:49+00:00,ogn-217,Trifarian Gloryseeker,Origins,origins,Common,6,0,0.05,0.24,0.3
+2026-09-26T07:44:49+00:00,ogn-218,Vanguard Captain,Origins,origins,Common,3,0,0.15,0.28,0.45
+2026-09-26T07:44:49+00:00,ogn-219,Vanguard Sergeant,Origins,origins,Common,4,0,0.04,0.17,0.16
+2026-09-26T07:44:49+00:00,ogn-220,Facebreaker,Origins,origins,Uncommon,6,0,0.18,0.42,1.08
+2026-09-26T07:44:49+00:00,ogn-221,Imperial Decree,Origins,origins,Uncommon,6,0,0.56,1.45,3.36
+2026-09-26T07:44:49+00:00,ogn-222,Noxian Drummer,Origins,origins,Uncommon,6,0,0.11,0.33,0.66
+2026-09-26T07:44:49+00:00,ogn-223,Peak Guardian,Origins,origins,Uncommon,6,0,0.1,0.3,0.6
+2026-09-26T07:44:49+00:00,ogn-224,Salvage,Origins,origins,Uncommon,2,0,4.48,6.81,8.96
+2026-09-26T07:44:49+00:00,ogn-225,Solari Chief,Origins,origins,Uncommon,4,0,0.14,0.3,0.56
+2026-09-26T07:44:49+00:00,ogn-226,Spectral Matron,Origins,origins,Uncommon,3,0,0.25,2.31,0.75
+2026-09-26T07:44:49+00:00,ogn-227,Symbol of the Solari,Origins,origins,Uncommon,6,0,0.1,0.32,0.6
+2026-09-26T07:44:49+00:00,ogn-228,Vanguard of Helm,Origins,origins,Uncommon,6,0,0.1,0.26,0.6
+2026-09-26T07:44:49+00:00,ogn-229,Vengeance,Origins,origins,Uncommon,3,0,0.18,0.58,0.54
+2026-09-26T07:44:49+00:00,ogn-233,Grand Strategem,Origins,origins,Rare,0,1,0.0,0.36,0.36
+2026-09-26T07:44:49+00:00,ogn-234,Harnessed Dragon,Origins,origins,Rare,0,1,0.0,3.01,3.01
+2026-09-26T07:44:49+00:00,ogn-241,Shen Kinkou,Origins,origins,Rare,0,1,0.0,0.6,0.6
+2026-09-26T07:44:49+00:00,ogn-265,Viktor Herald of the Arcane,Origins,origins,Rare,0,1,0.0,0.29,0.29
+2026-09-26T07:44:49+00:00,ogn-275,Altar to Unity,Origins,origins,Uncommon,1,0,0.1,0.44,0.1
+2026-09-26T07:44:49+00:00,ogn-277,Back-Alley Bar,Origins,origins,Uncommon,1,0,0.16,0.51,0.16
+2026-09-26T07:44:49+00:00,ogn-278,Bandle Tree,Origins,origins,Uncommon,1,0,0.18,0.5,0.18
+2026-09-26T07:44:49+00:00,ogn-279,Fortified Position,Origins,origins,Uncommon,1,0,0.17,0.63,0.17
+2026-09-26T07:44:49+00:00,ogn-280,Grove of the God-Willow,Origins,origins,Uncommon,1,0,0.27,1.52,0.27
+2026-09-26T07:44:49+00:00,ogn-281,Hallowed Tomb,Origins,origins,Uncommon,1,0,0.19,0.44,0.19
+2026-09-26T07:44:49+00:00,ogn-282,Monastery of Hirana,Origins,origins,Uncommon,1,0,0.19,0.56,0.19
+2026-09-26T07:44:49+00:00,ogn-283,Navori Fighting Pit,Origins,origins,Uncommon,1,0,0.15,0.36,0.15
+2026-09-26T07:44:49+00:00,ogn-286,Reckoner's Arena,Origins,origins,Uncommon,1,0,0.14,0.33,0.14
+2026-09-26T07:44:49+00:00,ogn-287,Sigil of the Storm,Origins,origins,Uncommon,1,0,0.22,1.38,0.22
+2026-09-26T07:44:49+00:00,ogn-288,Startipped Peak,Origins,origins,Uncommon,1,0,0.28,0.88,0.28
+2026-09-26T07:44:49+00:00,ogn-289,Targon's Peak,Origins,origins,Uncommon,1,0,0.3,3.42,0.3
+2026-09-26T07:44:49+00:00,ogn-292,The Dreaming Tree,Origins,origins,Uncommon,1,0,0.15,0.69,0.15
+2026-09-26T07:44:49+00:00,ogn-293,The Grand Plaza,Origins,origins,Uncommon,1,0,0.13,0.31,0.13
+2026-09-26T07:44:49+00:00,ogn-294,Trifarian War Camp,Origins,origins,Uncommon,1,0,0.3,1.36,0.3
+2026-09-26T07:44:49+00:00,ogn-295,Vilemaw's Lair,Origins,origins,Uncommon,1,0,0.29,2.05,0.29
+2026-09-26T07:44:49+00:00,ogn-296,Void Gate,Origins,origins,Uncommon,1,0,0.24,1.05,0.24
+2026-09-26T07:44:49+00:00,ogn-297,Windswept Hillock,Origins,origins,Uncommon,1,0,0.28,1.27,0.28
+2026-09-26T07:44:49+00:00,ogn-298,Zaun Warrens,Origins,origins,Uncommon,1,0,0.22,3.44,0.22
+2026-09-26T07:44:49+00:00,ven-002-p,Blade Twirler,Promotional Cards,riftbound-promotional-cards,Common,0,1,0.0,0.8,0.8
+2026-09-26T07:44:49+00:00,ven-004-p,Dune Surfer,Promotional Cards,riftbound-promotional-cards,Common,0,1,0.0,0.64,0.64
+2026-09-26T07:44:49+00:00,ven-013-p,Shadow Assassin,Promotional Cards,riftbound-promotional-cards,Uncommon,0,1,0.0,0.54,0.54
+2026-09-26T07:44:49+00:00,ven-026-p,Field Musicians,Promotional Cards,riftbound-promotional-cards,Common,0,4,0.0,0.61,2.44
+2026-09-26T07:44:49+00:00,ven-048-p,Cloud Drake,Promotional Cards,riftbound-promotional-cards,Common,0,1,0.0,0.36,0.36
+2026-09-26T07:44:49+00:00,ven-050-p,Grumpy Rockbear,Promotional Cards,riftbound-promotional-cards,Common,0,2,0.0,0.8,1.6
+2026-09-26T07:44:49+00:00,ven-058-p,Patched Porobot,Promotional Cards,riftbound-promotional-cards,Uncommon,0,1,0.0,2.2,2.2
+2026-09-26T07:44:49+00:00,ven-071-p,Fretful Feline,Promotional Cards,riftbound-promotional-cards,Common,0,4,0.0,0.27,1.08
+2026-09-26T07:44:49+00:00,ven-076-p,Repair Specialist,Promotional Cards,riftbound-promotional-cards,Common,0,3,0.0,0.64,1.92
+2026-09-26T07:44:49+00:00,ven-082-p,Profiteer,Promotional Cards,riftbound-promotional-cards,Uncommon,0,1,0.0,1.11,1.11
+2026-09-26T07:44:49+00:00,ven-097-p,Spiderling,Promotional Cards,riftbound-promotional-cards,Common,0,2,0.0,2.79,5.58
+2026-09-26T07:44:49+00:00,ven-099-p,Tornado Warrior,Promotional Cards,riftbound-promotional-cards,Common,0,1,0.0,0.74,0.74
+2026-09-26T07:44:49+00:00,ven-101-p,Gust Monk,Promotional Cards,riftbound-promotional-cards,Uncommon,0,1,0.0,1.07,1.07
+2026-09-26T07:44:49+00:00,ven-118-p,Horns of the Dragon,Promotional Cards,riftbound-promotional-cards,Common,0,2,0.0,0.3,0.6
+2026-09-26T07:44:49+00:00,ven-123-p,Soulspinner,Promotional Cards,riftbound-promotional-cards,Common,0,2,0.0,0.57,1.14
+2026-09-26T07:44:49+00:00,ven-125-p,Hungry Wolf,Promotional Cards,riftbound-promotional-cards,Uncommon,0,2,0.0,0.64,1.28
+2026-09-26T07:44:49+00:00,ven-r02b,Calm Rune,Promotional Cards,riftbound-promotional-cards,Showcase,0,1,0.0,9.84,9.84
+2026-09-26T07:44:49+00:00,ven-r03b,Mind Rune,Promotional Cards,riftbound-promotional-cards,Showcase,0,1,0.0,14.73,14.73
+2026-09-26T07:44:49+00:00,ven-r06b,Order Rune,Promotional Cards,riftbound-promotional-cards,Showcase,0,1,0.0,7.31,7.31
+2026-09-26T07:44:49+00:00,sfd-001,Against the Odds,Spiritforged,spiritforged,Common,3,0,0.12,0.27,0.36
+2026-09-26T07:44:49+00:00,sfd-002,Armed Assailant,Spiritforged,spiritforged,Common,5,0,0.04,0.14,0.2
+2026-09-26T07:44:49+00:00,sfd-004,Bushwhack,Spiritforged,spiritforged,Common,4,0,0.06,0.23,0.24
+2026-09-26T07:44:49+00:00,sfd-005,Detonate,Spiritforged,spiritforged,Common,4,0,0.06,0.25,0.24
+2026-09-26T07:44:49+00:00,sfd-006,Eager Drakehound,Spiritforged,spiritforged,Common,3,0,0.05,0.2,0.15
+2026-09-26T07:44:49+00:00,sfd-007,Gem Jammer,Spiritforged,spiritforged,Common,3,0,0.08,0.21,0.24
+2026-09-26T07:44:49+00:00,sfd-008,Sentinel Adept,Spiritforged,spiritforged,Common,3,0,0.04,0.2,0.12
+2026-09-26T07:44:49+00:00,sfd-009,Serrated Dirk,Spiritforged,spiritforged,Common,3,0,0.06,0.2,0.18
+2026-09-26T07:44:49+00:00,sfd-010,Void Drone,Spiritforged,spiritforged,Common,3,0,0.07,0.2,0.21
+2026-09-26T07:44:49+00:00,sfd-011,Angle Shot,Spiritforged,spiritforged,Uncommon,4,0,0.08,0.25,0.32
+2026-09-26T07:44:49+00:00,sfd-012,Battering Ram,Spiritforged,spiritforged,Uncommon,3,0,0.14,0.42,0.42
+2026-09-26T07:44:49+00:00,sfd-013,Blast Corps Cadet,Spiritforged,spiritforged,Uncommon,2,0,0.09,0.21,0.18
+2026-09-26T07:44:49+00:00,sfd-014,Minotaur Reckoner,Spiritforged,spiritforged,Uncommon,3,0,0.09,0.31,0.27
+2026-09-26T07:44:49+00:00,sfd-016,Recurve Bow,Spiritforged,spiritforged,Uncommon,3,0,0.11,0.21,0.33
+2026-09-26T07:44:49+00:00,sfd-017,Sudden Storm,Spiritforged,spiritforged,Uncommon,3,0,0.12,0.27,0.36
+2026-09-26T07:44:49+00:00,sfd-018,Void Hatchling,Spiritforged,spiritforged,Uncommon,3,0,0.09,0.28,0.27
+2026-09-26T07:44:49+00:00,sfd-031,Desert's Call,Spiritforged,spiritforged,Common,3,0,0.1,0.28,0.3
+2026-09-26T07:44:49+00:00,sfd-032,Disarming Rake,Spiritforged,spiritforged,Common,3,0,0.14,0.43,0.42
+2026-09-26T07:44:49+00:00,sfd-033,Doran's Shield,Spiritforged,spiritforged,Common,3,0,0.09,0.29,0.27
+2026-09-26T07:44:49+00:00,sfd-035,Guardian of the Passage,Spiritforged,spiritforged,Common,3,0,0.08,0.18,0.24
+2026-09-26T07:44:49+00:00,sfd-038,Ribbon Dancer,Spiritforged,spiritforged,Common,3,0,0.06,0.15,0.18
+2026-09-26T07:44:49+00:00,sfd-039,Royal Entourage,Spiritforged,spiritforged,Common,1,0,0.03,0.19,0.03
+2026-09-26T07:44:49+00:00,sfd-040,Thwonk!,Spiritforged,spiritforged,Common,2,0,0.07,0.24,0.14
+2026-09-26T07:44:49+00:00,sfd-041,Apprentice Smith,Spiritforged,spiritforged,Uncommon,3,0,0.1,0.28,0.3
+2026-09-26T07:44:49+00:00,sfd-042,Brutalizer,Spiritforged,spiritforged,Uncommon,3,0,0.34,1.48,1.02
+2026-09-26T07:44:49+00:00,sfd-043,Emperor's Divide,Spiritforged,spiritforged,Uncommon,6,0,0.34,1.23,2.04
+2026-09-26T07:44:49+00:00,sfd-044,Legion Quartermaster,Spiritforged,spiritforged,Uncommon,4,0,0.08,0.24,0.32
+2026-09-26T07:44:49+00:00,sfd-045,Not So Fast,Spiritforged,spiritforged,Uncommon,3,0,1.32,3.46,3.96
+2026-09-26T07:44:49+00:00,sfd-048,Stellacorn Herder,Spiritforged,spiritforged,Uncommon,6,0,1.02,2.19,6.12
+2026-09-26T07:44:49+00:00,sfd-050,Azir Ascendant,Spiritforged,spiritforged,Rare,0,1,0.0,0.22,0.22
+2026-09-26T07:44:49+00:00,sfd-053,Janna Savior,Spiritforged,spiritforged,Rare,0,1,0.0,0.5,0.5
+2026-09-26T07:44:49+00:00,sfd-062,Bubble Bot,Spiritforged,spiritforged,Common,3,0,0.1,0.24,0.3
+2026-09-26T07:44:49+00:00,sfd-063,Chemtech Cask,Spiritforged,spiritforged,Common,1,0,0.06,0.24,0.06
+2026-09-26T07:44:49+00:00,sfd-064,Cloth Armor,Spiritforged,spiritforged,Common,3,0,0.08,0.21,0.24
+2026-09-26T07:44:49+00:00,sfd-065,Forecaster,Spiritforged,spiritforged,Common,3,0,0.05,0.19,0.15
+2026-09-26T07:44:49+00:00,sfd-070,Wages of Pain,Spiritforged,spiritforged,Common,3,0,0.13,0.77,0.39
+2026-09-26T07:44:49+00:00,sfd-071,Breakneck Mech,Spiritforged,spiritforged,Uncommon,1,0,0.1,0.28,0.1
+2026-09-26T07:44:49+00:00,sfd-072,Dropboarder,Spiritforged,spiritforged,Uncommon,1,0,0.12,0.33,0.12
+2026-09-26T07:44:49+00:00,sfd-073,Experimental Hexplate,Spiritforged,spiritforged,Uncommon,2,0,0.08,0.29,0.16
+2026-09-26T07:44:49+00:00,sfd-074,Pickpocket,Spiritforged,spiritforged,Uncommon,1,0,0.26,1.26,0.26
+2026-09-26T07:44:49+00:00,sfd-075,Prize of Progress,Spiritforged,spiritforged,Uncommon,3,0,0.09,0.22,0.27
+2026-09-26T07:44:49+00:00,sfd-076,Production Surge,Spiritforged,spiritforged,Uncommon,1,0,0.11,0.28,0.11
+2026-09-26T07:44:49+00:00,sfd-078,Temporal Portal,Spiritforged,spiritforged,Uncommon,1,0,0.11,0.22,0.11
+2026-09-26T07:44:49+00:00,sfd-094,Direwing,Spiritforged,spiritforged,Common,1,0,0.08,0.22,0.08
+2026-09-26T07:44:49+00:00,sfd-095,Doran's Blade,Spiritforged,spiritforged,Common,3,0,0.11,0.19,0.33
+2026-09-26T07:44:49+00:00,sfd-101,Fae Dragon,Spiritforged,spiritforged,Uncommon,2,0,0.11,0.33,0.22
+2026-09-26T07:44:49+00:00,sfd-102,Hexdrinker,Spiritforged,spiritforged,Uncommon,3,0,0.09,0.25,0.27
+2026-09-26T07:44:49+00:00,sfd-103,Jaull-Fish,Spiritforged,spiritforged,Uncommon,3,0,0.08,0.27,0.24
+2026-09-26T07:44:49+00:00,sfd-106,Show of Strength,Spiritforged,spiritforged,Uncommon,1,0,0.14,0.41,0.14
+2026-09-26T07:44:49+00:00,sfd-108,Warmog's Armor,Spiritforged,spiritforged,Uncommon,2,0,0.08,0.26,0.16
+2026-09-26T07:44:49+00:00,sfd-122,Called Shot,Spiritforged,spiritforged,Common,1,0,0.07,0.44,0.07
+2026-09-26T07:44:49+00:00,sfd-124,Doran's Ring,Spiritforged,spiritforged,Common,1,0,0.07,0.19,0.07
+2026-09-26T07:44:49+00:00,sfd-127,Master Bingwen,Spiritforged,spiritforged,Common,1,0,0.02,0.16,0.02
+2026-09-26T07:44:49+00:00,sfd-128,Overzealous Fan,Spiritforged,spiritforged,Common,3,0,0.13,0.34,0.39
+2026-09-26T07:44:49+00:00,sfd-133,Boots of Swiftness,Spiritforged,spiritforged,Uncommon,3,0,0.48,2.56,1.44
+2026-09-26T07:44:49+00:00,sfd-134,Cull,Spiritforged,spiritforged,Uncommon,1,0,0.12,0.37,0.12
+2026-09-26T07:44:49+00:00,sfd-135,Factory Recall,Spiritforged,spiritforged,Uncommon,3,0,0.09,0.35,0.27
+2026-09-26T07:44:49+00:00,sfd-136,Hard Bargain,Spiritforged,spiritforged,Uncommon,0,1,0.66,3.96,3.96
+2026-09-26T07:44:49+00:00,sfd-138,Windsinger,Spiritforged,spiritforged,Uncommon,1,0,0.16,0.5,0.16
+2026-09-26T07:44:49+00:00,sfd-139,Edge of Night,Spiritforged,spiritforged,Rare,0,2,0.0,0.36,0.72
+2026-09-26T07:44:49+00:00,sfd-140,Fizz Trickster,Spiritforged,spiritforged,Rare,0,1,0.0,5.46,5.46
+2026-09-26T07:44:49+00:00,sfd-146,Vex Cheerless,Spiritforged,spiritforged,Rare,0,1,0.0,0.3,0.3
+2026-09-26T07:44:49+00:00,sfd-151,Bonds of Strength,Spiritforged,spiritforged,Common,6,0,0.08,0.18,0.48
+2026-09-26T07:44:49+00:00,sfd-152,Eminent Benefactor,Spiritforged,spiritforged,Common,3,0,0.04,0.19,0.12
+2026-09-26T07:44:49+00:00,sfd-153,Eye of the Herald,Spiritforged,spiritforged,Common,3,0,0.1,0.26,0.3
+2026-09-26T07:44:49+00:00,sfd-154,Guards!,Spiritforged,spiritforged,Common,3,0,0.07,0.22,0.21
+2026-09-26T07:44:49+00:00,sfd-155,Honest Broker,Spiritforged,spiritforged,Common,3,0,0.15,0.36,0.45
+2026-09-26T07:44:49+00:00,sfd-156,Laurent Duelist,Spiritforged,spiritforged,Common,3,0,0.03,0.16,0.09
+2026-09-26T07:44:49+00:00,sfd-157,Royal Guard,Spiritforged,spiritforged,Common,3,0,0.07,0.16,0.21
+2026-09-26T07:44:49+00:00,sfd-158,Sandshifter,Spiritforged,spiritforged,Common,6,0,0.06,0.17,0.36
+2026-09-26T07:44:49+00:00,sfd-159,Trusty Ramhound,Spiritforged,spiritforged,Common,6,0,0.09,0.22,0.54
+2026-09-26T07:44:49+00:00,sfd-160,Zaun Punk,Spiritforged,spiritforged,Common,3,0,0.07,0.2,0.21
+2026-09-26T07:44:49+00:00,sfd-161,B.F. Sword,Spiritforged,spiritforged,Uncommon,3,0,0.4,1.72,1.2
+2026-09-26T07:44:49+00:00,sfd-162,Blood Money,Spiritforged,spiritforged,Uncommon,3,0,0.15,0.33,0.45
+2026-09-26T07:44:49+00:00,sfd-163,Deathgrip,Spiritforged,spiritforged,Uncommon,3,0,0.4,2.09,1.2
+2026-09-26T07:44:49+00:00,sfd-164,Drag Under,Spiritforged,spiritforged,Uncommon,3,0,0.15,0.43,0.45
+2026-09-26T07:44:49+00:00,sfd-168,Vanguard Armory,Spiritforged,spiritforged,Uncommon,3,0,0.2,0.89,0.6
+2026-09-26T07:44:49+00:00,sfd-177,Azir Sovereign,Spiritforged,spiritforged,Epic,0,2,0.0,9.71,19.42
+2026-09-26T07:44:49+00:00,sfd-197,Azir Emperor of the Sands,Spiritforged,spiritforged,Rare,0,1,0.0,0.22,0.22
+2026-09-26T07:44:49+00:00,sfd-198,Arise!,Spiritforged,spiritforged,Epic,0,3,0.0,26.37,79.11
+2026-09-26T07:44:49+00:00,sfd-207,Emperor's Dais,Spiritforged,spiritforged,Uncommon,1,0,0.15,0.31,0.15
+2026-09-26T07:44:49+00:00,sfd-210,Hall of Legends,Spiritforged,spiritforged,Uncommon,1,0,0.13,0.39,0.13
+2026-09-26T07:44:49+00:00,sfd-213,Ornn's Forge,Spiritforged,spiritforged,Uncommon,1,0,0.09,0.36,0.09
+2026-09-26T07:44:49+00:00,sfd-216,Rockfall Path,Spiritforged,spiritforged,Uncommon,1,0,0.17,0.67,0.17
+2026-09-26T07:44:49+00:00,sfd-217,Seat of Power,Spiritforged,spiritforged,Uncommon,1,0,0.21,0.48,0.21
+2026-09-26T07:44:49+00:00,sfd-219,The Papertree,Spiritforged,spiritforged,Uncommon,1,0,0.15,0.4,0.15
+2026-09-26T07:44:49+00:00,sfd-r01,Fury Rune,Spiritforged,spiritforged,Common,1,0,0.09,0.0,0.09
+2026-09-26T07:44:49+00:00,unl-002,Inferna,Unleashed,unleashed,Common,2,0,0.14,0.33,0.28
+2026-09-26T07:44:49+00:00,unl-004,Prepared Neophyte,Unleashed,unleashed,Common,1,0,0.03,0.16,0.03
+2026-09-26T07:44:49+00:00,unl-006,Sharkling,Unleashed,unleashed,Common,1,0,0.06,0.24,0.06
+2026-09-26T07:44:49+00:00,unl-007,Smite,Unleashed,unleashed,Common,2,0,0.09,0.18,0.18
+2026-09-26T07:44:49+00:00,unl-009,Upstage Comedy,Unleashed,unleashed,Common,3,0,0.07,0.25,0.21
+2026-09-26T07:44:49+00:00,unl-010,Vault Breaker,Unleashed,unleashed,Common,2,0,0.07,0.22,0.14
+2026-09-26T07:44:49+00:00,unl-012,Lord Broadmane,Unleashed,unleashed,Uncommon,2,0,0.06,0.25,0.12
+2026-09-26T07:44:49+00:00,unl-013,Lotus Trap,Unleashed,unleashed,Uncommon,3,0,0.15,0.41,0.45
+2026-09-26T07:44:49+00:00,unl-014,Monster Harpoon,Unleashed,unleashed,Uncommon,1,0,0.1,0.28,0.1
+2026-09-26T07:44:49+00:00,unl-015,Right of Conquest,Unleashed,unleashed,Uncommon,1,0,0.07,0.25,0.07
+2026-09-26T07:44:49+00:00,unl-016,Scorchclaw,Unleashed,unleashed,Uncommon,1,0,0.07,0.17,0.07
+2026-09-26T07:44:49+00:00,unl-018,Yeti Brawler,Unleashed,unleashed,Uncommon,3,0,0.07,0.27,0.21
+2026-09-26T07:44:49+00:00,unl-025,Undying Legion,Unleashed,unleashed,Rare,0,1,0.0,0.19,0.19
+2026-09-26T07:44:49+00:00,unl-031,Combat Experience,Unleashed,unleashed,Common,2,0,0.05,0.1,0.1
+2026-09-26T07:44:49+00:00,unl-033,Frisky Hunter,Unleashed,unleashed,Common,4,0,0.06,0.22,0.24
+2026-09-26T07:44:49+00:00,unl-034,Herald of Spring,Unleashed,unleashed,Common,3,0,0.06,0.16,0.18
+2026-09-26T07:44:49+00:00,unl-035,Monch,Unleashed,unleashed,Common,1,0,0.06,0.18,0.06
+2026-09-26T07:44:49+00:00,unl-036,Mutated Mouser,Unleashed,unleashed,Common,9,0,0.11,0.25,0.99
+2026-09-26T07:44:49+00:00,unl-037,Shadow Watcher,Unleashed,unleashed,Common,1,0,0.05,0.15,0.05
+2026-09-26T07:44:49+00:00,unl-038,Skyward Strike,Unleashed,unleashed,Common,3,0,0.1,0.22,0.3
+2026-09-26T07:44:49+00:00,unl-039,Soul Sword,Unleashed,unleashed,Common,4,0,0.09,0.24,0.36
+2026-09-26T07:44:49+00:00,unl-040,Wuju Apprentice,Unleashed,unleashed,Common,3,0,0.08,0.16,0.24
+2026-09-26T07:44:49+00:00,unl-041,Allay Eager Admirer,Unleashed,unleashed,Uncommon,3,0,0.14,0.43,0.42
+2026-09-26T07:44:49+00:00,unl-042,Back Off,Unleashed,unleashed,Uncommon,7,0,0.23,1.37,1.61
+2026-09-26T07:44:49+00:00,unl-043,Enthusiastic Promoter,Unleashed,unleashed,Uncommon,2,0,0.08,0.21,0.16
+2026-09-26T07:44:49+00:00,unl-044,Flurry of Feathers,Unleashed,unleashed,Uncommon,3,0,0.18,0.45,0.54
+2026-09-26T07:44:49+00:00,unl-046,Friendship,Unleashed,unleashed,Uncommon,3,0,0.16,0.37,0.48
+2026-09-26T07:44:49+00:00,unl-047,Mosstomper,Unleashed,unleashed,Uncommon,2,0,0.09,0.28,0.18
+2026-09-26T07:44:49+00:00,unl-048,Trevor Snoozebottom,Unleashed,unleashed,Uncommon,3,0,0.12,0.21,0.36
+2026-09-26T07:44:49+00:00,unl-050,Iascylla,Unleashed,unleashed,Rare,0,1,0.0,0.17,0.17
+2026-09-26T07:44:49+00:00,unl-051,Ivern Nurturer,Unleashed,unleashed,Rare,0,1,0.0,0.21,0.21
+2026-09-26T07:44:49+00:00,unl-051a,Ivern Nurturer,Unleashed,unleashed,Showcase,0,2,0.0,2.12,4.24
+2026-09-26T07:44:49+00:00,unl-052,Nami Headstrong,Unleashed,unleashed,Rare,0,2,0.0,0.32,0.64
+2026-09-26T07:44:49+00:00,unl-053,Scuttle Crab,Unleashed,unleashed,Rare,0,2,0.0,4.43,8.86
+2026-09-26T07:44:49+00:00,unl-055,Vex Mocking,Unleashed,unleashed,Rare,0,2,0.0,0.21,0.42
+2026-09-26T07:44:49+00:00,unl-061,Downstage Dramatics,Unleashed,unleashed,Common,4,0,0.07,0.21,0.28
+2026-09-26T07:44:49+00:00,unl-063,Eclipse,Unleashed,unleashed,Common,3,0,0.13,0.29,0.39
+2026-09-26T07:44:49+00:00,unl-067,Ruined Rex,Unleashed,unleashed,Common,3,0,0.09,0.24,0.27
+2026-09-26T07:44:49+00:00,unl-068,Spectral Centaur,Unleashed,unleashed,Common,1,0,0.05,0.13,0.05
+2026-09-26T07:44:49+00:00,unl-069,Sprite Burst,Unleashed,unleashed,Common,3,0,0.12,0.32,0.36
+2026-09-26T07:44:49+00:00,unl-070,Turn to Dust,Unleashed,unleashed,Common,2,0,0.14,0.86,0.28
+2026-09-26T07:44:49+00:00,unl-071,Chakram Dancer,Unleashed,unleashed,Uncommon,5,0,0.11,0.22,0.55
+2026-09-26T07:44:49+00:00,unl-072,Crescent Strike,Unleashed,unleashed,Uncommon,3,0,0.12,0.27,0.36
+2026-09-26T07:44:49+00:00,unl-073,Deadly Flourish,Unleashed,unleashed,Uncommon,1,0,0.31,5.24,0.31
+2026-09-26T07:44:49+00:00,unl-075,Gustwalker,Unleashed,unleashed,Uncommon,3,0,0.11,0.25,0.33
+2026-09-26T07:44:49+00:00,unl-077,Soul Shepherd,Unleashed,unleashed,Uncommon,3,0,0.13,0.31,0.39
+2026-09-26T07:44:49+00:00,unl-078,Sprite Fountain,Unleashed,unleashed,Uncommon,2,0,2.69,7.38,5.38
+2026-09-26T07:44:49+00:00,unl-079,Diana Lunari,Unleashed,unleashed,Rare,0,1,0.0,0.22,0.22
+2026-09-26T07:44:49+00:00,unl-091,Concentrate,Unleashed,unleashed,Common,2,0,0.07,0.21,0.14
+2026-09-26T07:44:49+00:00,unl-092,Demacian Diplomat,Unleashed,unleashed,Common,1,0,0.04,0.16,0.04
+2026-09-26T07:44:49+00:00,unl-096,Hunter's Machete,Unleashed,unleashed,Common,3,0,0.06,0.17,0.18
+2026-09-26T07:44:49+00:00,unl-099,Towering Combatant,Unleashed,unleashed,Common,3,0,0.03,0.14,0.09
+2026-09-26T07:44:49+00:00,unl-101,Call to Battle,Unleashed,unleashed,Uncommon,1,0,0.08,0.23,0.08
+2026-09-26T07:44:49+00:00,unl-103,Disposal Order,Unleashed,unleashed,Uncommon,1,0,0.17,0.41,0.17
+2026-09-26T07:44:49+00:00,unl-107,Stare Down,Unleashed,unleashed,Uncommon,3,0,0.11,0.3,0.33
+2026-09-26T07:44:49+00:00,unl-108,Wily Newtfish,Unleashed,unleashed,Uncommon,1,0,0.06,0.22,0.06
+2026-09-26T07:44:49+00:00,unl-109,Blood Rose,Unleashed,unleashed,Rare,0,1,0.0,0.18,0.18
+2026-09-26T07:44:49+00:00,unl-114,Nidalee Cat Form,Unleashed,unleashed,Rare,0,1,0.0,3.33,3.33
+2026-09-26T07:44:49+00:00,unl-121,Bewitching Spirit,Unleashed,unleashed,Common,1,0,0.12,0.27,0.12
+2026-09-26T07:44:49+00:00,unl-122,Crescent Guardian,Unleashed,unleashed,Common,1,0,0.06,0.1,0.06
+2026-09-26T07:44:49+00:00,unl-123,Evershade Stalker,Unleashed,unleashed,Common,1,0,0.07,0.18,0.07
+2026-09-26T07:44:49+00:00,unl-126,Megatusk,Unleashed,unleashed,Common,1,0,0.03,0.1,0.03
+2026-09-26T07:44:49+00:00,unl-127,Mister Root,Unleashed,unleashed,Common,2,0,0.1,0.31,0.2
+2026-09-26T07:44:49+00:00,unl-128,Star-Crossed,Unleashed,unleashed,Common,2,0,0.23,0.84,0.46
+2026-09-26T07:44:49+00:00,unl-132,Angler Beast,Unleashed,unleashed,Uncommon,2,0,0.18,0.52,0.36
+2026-09-26T07:44:49+00:00,unl-133,Blast Cone,Unleashed,unleashed,Uncommon,3,0,0.06,0.19,0.18
+2026-09-26T07:44:49+00:00,unl-134,Existential Dread,Unleashed,unleashed,Uncommon,3,0,0.19,1.24,0.57
+2026-09-26T07:44:49+00:00,unl-136,Scryer's Bloom,Unleashed,unleashed,Uncommon,1,0,0.1,0.26,0.1
+2026-09-26T07:44:49+00:00,unl-138,The List,Unleashed,unleashed,Uncommon,1,0,0.2,0.75,0.2
+2026-09-26T07:44:49+00:00,unl-141,Evelynn Entrancing,Unleashed,unleashed,Rare,0,2,0.0,1.25,2.5
+2026-09-26T07:44:49+00:00,unl-142,Heedless Resurrection,Unleashed,unleashed,Rare,0,1,0.0,0.4,0.4
+2026-09-26T07:44:49+00:00,unl-143,Kha'Zix Mutating Horror,Unleashed,unleashed,Rare,0,2,0.0,0.28,0.56
+2026-09-26T07:44:49+00:00,unl-144,Maduli the Gatekeeper,Unleashed,unleashed,Rare,0,1,0.0,0.1,0.1
+2026-09-26T07:44:49+00:00,unl-145,Pyke Returned,Unleashed,unleashed,Rare,0,2,0.0,0.73,1.46
+2026-09-26T07:44:49+00:00,unl-150,Vex Apathetic,Unleashed,unleashed,Epic,0,1,0.0,15.86,15.86
+2026-09-26T07:44:49+00:00,unl-151,Bandle Soldier,Unleashed,unleashed,Common,3,0,0.03,0.11,0.09
+2026-09-26T07:44:49+00:00,unl-153,Carrion Dredger,Unleashed,unleashed,Common,5,0,0.14,0.25,0.7
+2026-09-26T07:44:49+00:00,unl-154,Crimson Pigeons,Unleashed,unleashed,Common,3,0,0.05,0.22,0.15
+2026-09-26T07:44:49+00:00,unl-155,Heroic Charge,Unleashed,unleashed,Common,3,0,0.08,0.19,0.24
+2026-09-26T07:44:49+00:00,unl-156,Loyal Poro,Unleashed,unleashed,Common,5,0,0.07,0.26,0.35
+2026-09-26T07:44:49+00:00,unl-157,Scrutinizing Sergeant,Unleashed,unleashed,Common,1,0,0.04,0.12,0.04
+2026-09-26T07:44:49+00:00,unl-159,Soul Harvest,Unleashed,unleashed,Common,1,0,0.09,0.16,0.09
+2026-09-26T07:44:49+00:00,unl-160,Ultrasoft Poro,Unleashed,unleashed,Common,3,0,0.1,0.29,0.3
+2026-09-26T07:44:49+00:00,unl-163,Mageseeker Investigator,Unleashed,unleashed,Uncommon,1,0,0.12,0.2,0.12
+2026-09-26T07:44:49+00:00,unl-165,Shadow's Call,Unleashed,unleashed,Uncommon,3,0,0.36,1.69,1.08
+2026-09-26T07:44:49+00:00,unl-166,Stalking Wolf,Unleashed,unleashed,Uncommon,2,0,0.07,0.17,0.14
+2026-09-26T07:44:49+00:00,unl-168,Undying Loyalty,Unleashed,unleashed,Uncommon,3,0,0.13,0.34,0.39
+2026-09-26T07:44:49+00:00,unl-171,Galio Indefatigable,Unleashed,unleashed,Rare,0,1,0.0,0.25,0.25
+2026-09-26T07:44:49+00:00,unl-177,Ivern Friend to All,Unleashed,unleashed,Epic,0,2,0.0,1.44,2.88
+2026-09-26T07:44:49+00:00,unl-187,Vi Piltover Enforcer,Unleashed,unleashed,Rare,0,1,0.0,0.18,0.18
+2026-09-26T07:44:49+00:00,unl-191,Master Yi Wuju Master,Unleashed,unleashed,Rare,0,1,0.0,0.16,0.16
+2026-09-26T07:44:49+00:00,unl-193,Vex Gloomist,Unleashed,unleashed,Rare,0,1,0.0,0.18,0.18
+2026-09-26T07:44:49+00:00,unl-194,Shadow,Unleashed,unleashed,Epic,0,1,0.0,0.44,0.44
+2026-09-26T07:44:49+00:00,unl-195,Ivern Green Father,Unleashed,unleashed,Rare,0,1,0.0,0.15,0.15
+2026-09-26T07:44:49+00:00,unl-196,Daisy!,Unleashed,unleashed,Epic,0,2,0.0,1.42,2.84
+2026-09-26T07:44:49+00:00,unl-199,Leblanc Deceiver,Unleashed,unleashed,Rare,0,1,0.0,0.18,0.18
+2026-09-26T07:44:49+00:00,unl-201,Kha'Zix Voidreaver,Unleashed,unleashed,Rare,0,1,0.0,0.14,0.14
+2026-09-26T07:44:49+00:00,unl-207,Amateur Recital,Unleashed,unleashed,Uncommon,1,0,0.07,0.25,0.07
+2026-09-26T07:44:49+00:00,unl-208,Black Flame Altar,Unleashed,unleashed,Uncommon,1,0,0.08,0.24,0.08
+2026-09-26T07:44:49+00:00,unl-209,Dusk Rose Lab,Unleashed,unleashed,Uncommon,1,0,0.1,0.33,0.1
+2026-09-26T07:44:49+00:00,unl-210,Forbidding Waste,Unleashed,unleashed,Uncommon,1,0,0.13,0.38,0.13
+2026-09-26T07:44:49+00:00,unl-212,Frozen Fortress,Unleashed,unleashed,Uncommon,1,0,0.11,0.28,0.11
+2026-09-26T07:44:49+00:00,unl-213,Gardens of Becoming,Unleashed,unleashed,Uncommon,1,0,0.07,0.23,0.07
+2026-09-26T07:44:49+00:00,unl-214,Ripper's Bay,Unleashed,unleashed,Uncommon,1,0,0.08,0.25,0.08
+2026-09-26T07:44:49+00:00,unl-215,Star Spring,Unleashed,unleashed,Uncommon,1,0,0.13,0.37,0.13
+2026-09-26T07:44:49+00:00,unl-219,Vaults of Helia,Unleashed,unleashed,Uncommon,1,0,0.05,0.18,0.05
+2026-09-26T07:44:49+00:00,ven-001,Baccai Sandspinner,Vendetta,vendetta,Common,2,0,0.06,0.11,0.12
+2026-09-26T07:44:49+00:00,ven-002,Blade Twirler,Vendetta,vendetta,Common,6,0,0.06,0.15,0.36
+2026-09-26T07:44:49+00:00,ven-003,Brittle Steel,Vendetta,vendetta,Common,3,0,0.09,0.32,0.27
+2026-09-26T07:44:49+00:00,ven-004,Dune Surfer,Vendetta,vendetta,Common,5,0,0.08,0.22,0.4
+2026-09-26T07:44:49+00:00,ven-005,Forsaken Baccai,Vendetta,vendetta,Common,4,0,0.08,0.22,0.32
+2026-09-26T07:44:49+00:00,ven-006,Oasis Raider,Vendetta,vendetta,Common,2,0,0.08,0.15,0.16
+2026-09-26T07:44:49+00:00,ven-007,Punching Poro,Vendetta,vendetta,Common,6,0,0.06,0.2,0.36
+2026-09-26T07:44:49+00:00,ven-008,Ruthless Strike,Vendetta,vendetta,Common,6,0,0.08,0.2,0.48
+2026-09-26T07:44:49+00:00,ven-009,Baccai Reaper,Vendetta,vendetta,Uncommon,2,1,0.06,0.24,0.36
+2026-09-26T07:44:49+00:00,ven-010,Consuming Curse,Vendetta,vendetta,Uncommon,1,0,0.09,0.18,0.09
+2026-09-26T07:44:49+00:00,ven-011,Pendulum Blade,Vendetta,vendetta,Uncommon,1,0,0.1,0.32,0.1
+2026-09-26T07:44:49+00:00,ven-012,Perfect Execution,Vendetta,vendetta,Uncommon,2,0,0.13,0.41,0.26
+2026-09-26T07:44:49+00:00,ven-013,Shadow Assassin,Vendetta,vendetta,Uncommon,5,0,0.07,0.22,0.35
+2026-09-26T07:44:49+00:00,ven-014,Shadow Fiend,Vendetta,vendetta,Uncommon,3,0,0.06,0.26,0.18
+2026-09-26T07:44:49+00:00,ven-015,Decree of Rage,Vendetta,vendetta,Rare,0,2,0.0,0.26,0.52
+2026-09-26T07:44:49+00:00,ven-016,Eclipse Dragon,Vendetta,vendetta,Rare,0,2,0.0,0.15,0.3
+2026-09-26T07:44:49+00:00,ven-017,Morgana Vindictive,Vendetta,vendetta,Rare,0,2,0.0,0.14,0.28
+2026-09-26T07:44:49+00:00,ven-019,Renekton Rage Fueled,Vendetta,vendetta,Rare,0,2,0.0,0.14,0.28
+2026-09-26T07:44:49+00:00,ven-020,Twilight Reveler,Vendetta,vendetta,Rare,0,2,0.0,0.21,0.42
+2026-09-26T07:44:49+00:00,ven-021,Akali Deadly Weapon,Vendetta,vendetta,Epic,0,1,0.0,1.07,1.07
+2026-09-26T07:44:49+00:00,ven-023,Zed From the Shadows,Vendetta,vendetta,Epic,0,1,0.0,0.44,0.44
+2026-09-26T07:44:49+00:00,ven-024,Affectionate Poro,Vendetta,vendetta,Common,2,0,0.07,0.21,0.14
+2026-09-26T07:44:49+00:00,ven-025,Esteemed Hierophant,Vendetta,vendetta,Common,3,0,0.04,0.11,0.12
+2026-09-26T07:44:49+00:00,ven-026,Field Musicians,Vendetta,vendetta,Common,3,0,0.05,0.1,0.15
+2026-09-26T07:44:49+00:00,ven-027,Hand Hammer,Vendetta,vendetta,Common,6,0,0.08,0.31,0.48
+2026-09-26T07:44:49+00:00,ven-028,Mournful Witness,Vendetta,vendetta,Common,6,0,0.08,0.32,0.48
+2026-09-26T07:44:49+00:00,ven-029,Ol' Poro,Vendetta,vendetta,Common,5,0,0.07,0.29,0.35
+2026-09-26T07:44:49+00:00,ven-030,Serene Ascetic,Vendetta,vendetta,Common,3,0,0.04,0.15,0.12
+2026-09-26T07:44:49+00:00,ven-031,Twilight Shroud,Vendetta,vendetta,Common,2,0,0.09,0.31,0.18
+2026-09-26T07:44:49+00:00,ven-032,Frostcoat Mother,Vendetta,vendetta,Uncommon,2,0,0.06,0.24,0.12
+2026-09-26T07:44:49+00:00,ven-033,Pakaa Protector,Vendetta,vendetta,Uncommon,2,0,0.06,0.26,0.12
+2026-09-26T07:44:49+00:00,ven-034,Resonating Strike,Vendetta,vendetta,Uncommon,1,0,0.15,0.26,0.15
+2026-09-26T07:44:49+00:00,ven-035,Sanction,Vendetta,vendetta,Uncommon,2,0,0.08,0.25,0.16
+2026-09-26T07:44:49+00:00,ven-036,Sandstone Chimera,Vendetta,vendetta,Uncommon,4,0,0.05,0.17,0.2
+2026-09-26T07:44:49+00:00,ven-037,Tomb-Raider Barbara,Vendetta,vendetta,Uncommon,3,0,0.12,0.38,0.36
+2026-09-26T07:44:49+00:00,ven-038,Akali Silent,Vendetta,vendetta,Rare,0,1,0.0,0.34,0.34
+2026-09-26T07:44:49+00:00,ven-039,Crumbling Sands,Vendetta,vendetta,Rare,0,2,0.0,0.26,0.52
+2026-09-26T07:44:49+00:00,ven-040,Decree of Focus,Vendetta,vendetta,Rare,0,1,0.0,0.46,0.46
+2026-09-26T07:44:49+00:00,ven-042,Shen Scourge of Shadows,Vendetta,vendetta,Rare,0,2,0.0,0.12,0.24
+2026-09-26T07:44:49+00:00,ven-043,Steel Paws,Vendetta,vendetta,Rare,0,3,0.0,0.35,1.05
+2026-09-26T07:44:49+00:00,ven-044,Astral Heron,Vendetta,vendetta,Epic,0,1,0.0,38.77,38.77
+2026-09-26T07:44:49+00:00,ven-045,Helm of Suppression,Vendetta,vendetta,Epic,0,1,0.0,2.82,2.82
+2026-09-26T07:44:49+00:00,ven-047,Apprentice Mage,Vendetta,vendetta,Common,4,0,0.04,0.19,0.16
+2026-09-26T07:44:49+00:00,ven-048,Cloud Drake,Vendetta,vendetta,Common,6,0,0.04,0.17,0.24
+2026-09-26T07:44:49+00:00,ven-049,Dredge Up,Vendetta,vendetta,Common,5,0,0.1,0.41,0.5
+2026-09-26T07:44:49+00:00,ven-050,Grumpy Rockbear,Vendetta,vendetta,Common,1,0,0.04,0.13,0.04
+2026-09-26T07:44:49+00:00,ven-051,Iterative Design,Vendetta,vendetta,Common,2,1,0.07,0.26,0.4
+2026-09-26T07:44:49+00:00,ven-052,Mesmerize,Vendetta,vendetta,Common,2,0,0.1,0.28,0.2
+2026-09-26T07:44:49+00:00,ven-053,Otterpus,Vendetta,vendetta,Common,1,0,0.1,0.17,0.1
+2026-09-26T07:44:49+00:00,ven-054,Questionable Tome,Vendetta,vendetta,Common,5,0,0.06,0.32,0.3
+2026-09-26T07:44:49+00:00,ven-055,Applied Researchers,Vendetta,vendetta,Uncommon,3,0,0.15,0.71,0.45
+2026-09-26T07:44:49+00:00,ven-056,Clairvoyance,Vendetta,vendetta,Uncommon,2,0,0.13,0.26,0.26
+2026-09-26T07:44:49+00:00,ven-058,Patched Porobot,Vendetta,vendetta,Uncommon,3,0,0.19,0.59,0.57
+2026-09-26T07:44:49+00:00,ven-059,Shock Blast,Vendetta,vendetta,Uncommon,5,0,0.11,0.43,0.55
+2026-09-26T07:44:49+00:00,ven-060,Sky Cruiser,Vendetta,vendetta,Uncommon,3,0,0.06,0.13,0.18
+2026-09-26T07:44:49+00:00,ven-061,Decree of Insight,Vendetta,vendetta,Rare,0,4,0.0,0.4,1.6
+2026-09-26T07:44:49+00:00,ven-062,Hextech Formula,Vendetta,vendetta,Rare,0,3,0.0,0.16,0.48
+2026-09-26T07:44:49+00:00,ven-063,Nasus Guardian of Knowledge,Vendetta,vendetta,Rare,0,1,0.0,0.14,0.14
+2026-09-26T07:44:49+00:00,ven-065,Swain Visionary,Vendetta,vendetta,Rare,0,2,0.0,0.22,0.44
+2026-09-26T07:44:49+00:00,ven-070,Brutal Hunter,Vendetta,vendetta,Common,4,0,0.05,0.15,0.2
+2026-09-26T07:44:49+00:00,ven-071,Fretful Feline,Vendetta,vendetta,Common,1,0,0.03,0.14,0.03
+2026-09-26T07:44:49+00:00,ven-072,Guttural Roar,Vendetta,vendetta,Common,6,0,0.05,0.24,0.3
+2026-09-26T07:44:49+00:00,ven-073,Jagged Cutlass,Vendetta,vendetta,Common,5,0,0.07,0.18,0.35
+2026-09-26T07:44:49+00:00,ven-074,Legion Marauder,Vendetta,vendetta,Common,1,0,0.06,0.22,0.06
+2026-09-26T07:44:49+00:00,ven-075,Platewyrm Egg,Vendetta,vendetta,Common,6,0,0.09,0.23,0.54
+2026-09-26T07:44:49+00:00,ven-076,Repair Specialist,Vendetta,vendetta,Common,3,0,0.1,0.27,0.3
+2026-09-26T07:44:49+00:00,ven-077,Tools of Empire,Vendetta,vendetta,Common,3,0,0.05,0.3,0.15
+2026-09-26T07:44:49+00:00,ven-079,Dame the Despoiler,Vendetta,vendetta,Uncommon,3,0,0.06,0.21,0.18
+2026-09-26T07:44:49+00:00,ven-080,Noxian Demolitionist,Vendetta,vendetta,Uncommon,1,0,0.07,0.2,0.07
+2026-09-26T07:44:49+00:00,ven-081,Onslaught,Vendetta,vendetta,Uncommon,6,0,0.14,0.31,0.84
+2026-09-26T07:44:49+00:00,ven-082,Profiteer,Vendetta,vendetta,Uncommon,2,0,0.1,0.29,0.2
+2026-09-26T07:44:49+00:00,ven-083,Rampage,Vendetta,vendetta,Uncommon,1,0,0.27,0.88,0.27
+2026-09-26T07:44:49+00:00,ven-084,Ambessa The Wolf,Vendetta,vendetta,Rare,0,1,0.0,0.21,0.21
+2026-09-26T07:44:49+00:00,ven-085,Decree of Strength,Vendetta,vendetta,Rare,0,2,0.0,0.35,0.7
+2026-09-26T07:44:49+00:00,ven-086,Gangplank Naval,Vendetta,vendetta,Rare,0,1,0.0,0.26,0.26
+2026-09-26T07:44:49+00:00,ven-087,Hextech Disc,Vendetta,vendetta,Rare,0,1,0.0,0.17,0.17
+2026-09-26T07:44:49+00:00,ven-089,Wild Claw,Vendetta,vendetta,Rare,0,1,0.0,0.13,0.13
+2026-09-26T07:44:49+00:00,ven-090,Cataclysmic Duel,Vendetta,vendetta,Epic,0,1,0.0,0.4,0.4
+2026-09-26T07:44:49+00:00,ven-093,Kinkou Lifeblade,Vendetta,vendetta,Common,5,0,0.05,0.13,0.25
+2026-09-26T07:44:49+00:00,ven-094,Mask Mother,Vendetta,vendetta,Common,1,0,0.08,0.21,0.08
+2026-09-26T07:44:49+00:00,ven-095,Shadow Order Disciple,Vendetta,vendetta,Common,6,0,0.1,0.35,0.6
+2026-09-26T07:44:49+00:00,ven-096,Shadowblade Lurker,Vendetta,vendetta,Common,6,0,0.05,0.23,0.3
+2026-09-26T07:44:49+00:00,ven-097,Spiderling,Vendetta,vendetta,Common,7,0,0.28,0.53,1.96
+2026-09-26T07:44:49+00:00,ven-098,Stargazer,Vendetta,vendetta,Common,2,0,0.05,0.13,0.1
+2026-09-26T07:44:49+00:00,ven-099,Tornado Warrior,Vendetta,vendetta,Common,4,0,0.15,0.29,0.6
+2026-09-26T07:44:49+00:00,ven-100,Up from the Deep,Vendetta,vendetta,Common,1,0,0.12,0.67,0.12
+2026-09-26T07:44:49+00:00,ven-101,Gust Monk,Vendetta,vendetta,Uncommon,2,0,0.13,0.32,0.26
+2026-09-26T07:44:49+00:00,ven-102,Ravenbloom Prefect,Vendetta,vendetta,Uncommon,3,0,0.18,1.21,0.54
+2026-09-26T07:44:49+00:00,ven-104,Tail-Cloaked Matriarch,Vendetta,vendetta,Uncommon,1,0,0.15,0.55,0.15
+2026-09-26T07:44:49+00:00,ven-105,Twilight Step,Vendetta,vendetta,Uncommon,6,0,0.07,0.33,0.42
+2026-09-26T07:44:49+00:00,ven-106,Wind and Ghosts,Vendetta,vendetta,Uncommon,5,0,0.15,0.59,0.75
+2026-09-26T07:44:49+00:00,ven-107,Decree of Discord,Vendetta,vendetta,Rare,0,1,0.0,0.2,0.2
+2026-09-26T07:44:49+00:00,ven-108,Forgotten Relic,Vendetta,vendetta,Rare,0,1,0.0,0.16,0.16
+2026-09-26T07:44:49+00:00,ven-110,Mel Defiant Soul,Vendetta,vendetta,Rare,0,1,0.0,0.17,0.17
+2026-09-26T07:44:49+00:00,ven-112,Zed Without a Sound,Vendetta,vendetta,Rare,0,3,0.0,0.23,0.69
+2026-09-26T07:44:49+00:00,ven-113,Kennen Storm of Shuriken,Vendetta,vendetta,Epic,0,1,0.0,1.44,1.44
+2026-09-26T07:44:49+00:00,ven-116,Dragon Form,Vendetta,vendetta,Common,3,0,0.11,0.28,0.33
+2026-09-26T07:44:49+00:00,ven-117,Disciple of Shen,Vendetta,vendetta,Common,6,0,0.06,0.21,0.36
+2026-09-26T07:44:49+00:00,ven-118,Horns of the Dragon,Vendetta,vendetta,Common,3,0,0.03,0.14,0.09
+2026-09-26T07:44:49+00:00,ven-119,Keeper of Law,Vendetta,vendetta,Common,2,0,0.06,0.14,0.12
+2026-09-26T07:44:49+00:00,ven-120,Masa Crashing Thunder,Vendetta,vendetta,Common,3,0,0.07,0.16,0.21
+2026-09-26T07:44:49+00:00,ven-121,Reluctant Leader,Vendetta,vendetta,Common,2,0,0.06,0.13,0.12
+2026-09-26T07:44:49+00:00,ven-122,Solari Sunhawk,Vendetta,vendetta,Common,4,0,0.1,0.33,0.4
+2026-09-26T07:44:49+00:00,ven-123,Soulspinner,Vendetta,vendetta,Common,6,0,0.04,0.16,0.24
+2026-09-26T07:44:49+00:00,ven-126,Ki Barrier,Vendetta,vendetta,Uncommon,3,0,0.19,0.36,0.57
+2026-09-26T07:44:49+00:00,ven-127,Lacerate,Vendetta,vendetta,Uncommon,6,0,0.12,0.35,0.72
+2026-09-26T07:44:49+00:00,ven-128,Noxian Emissary,Vendetta,vendetta,Uncommon,5,0,0.13,0.39,0.65
+2026-09-26T07:44:49+00:00,ven-129,Sacred Protector,Vendetta,vendetta,Uncommon,3,0,0.08,0.34,0.24
+2026-09-26T07:44:49+00:00,ven-132,Fallen Feline,Vendetta,vendetta,Rare,0,2,0.0,0.19,0.38
+2026-09-26T07:44:49+00:00,ven-133,Glowstone,Vendetta,vendetta,Rare,0,1,0.0,0.14,0.14
+2026-09-26T07:44:49+00:00,ven-134,Kayle Justified,Vendetta,vendetta,Rare,0,1,0.0,0.28,0.28
+2026-09-26T07:44:49+00:00,ven-135,Kennen Keeper of Balance,Vendetta,vendetta,Rare,0,2,0.0,0.33,0.66
+2026-09-26T07:44:49+00:00,ven-138,Shen Leader of the Kinkou Order,Vendetta,vendetta,Epic,0,1,0.0,0.28,0.28
+2026-09-26T07:44:49+00:00,ven-139,Akali Rogue Assassin,Vendetta,vendetta,Rare,0,1,0.0,0.24,0.24
+2026-09-26T07:44:49+00:00,ven-141,Renekton Butcher of the Sands,Vendetta,vendetta,Rare,0,1,0.0,0.16,0.16
+2026-09-26T07:44:49+00:00,ven-143,Zed Master of Shadows,Vendetta,vendetta,Rare,0,1,0.0,0.1,0.1
+2026-09-26T07:44:49+00:00,ven-144,Death Mark,Vendetta,vendetta,Epic,0,1,0.0,1.18,1.18
+2026-09-26T07:44:49+00:00,ven-145,Nasus Curator of the Sands,Vendetta,vendetta,Rare,0,1,0.0,0.14,0.14
+2026-09-26T07:44:49+00:00,ven-147,Shen Eye of Twilight,Vendetta,vendetta,Rare,0,1,0.0,0.11,0.11
+2026-09-26T07:44:49+00:00,ven-148,Shadow Dash,Vendetta,vendetta,Epic,0,1,0.0,0.5,0.5
+2026-09-26T07:44:49+00:00,ven-149,Jayce Defender of Tomorrow,Vendetta,vendetta,Rare,0,1,0.0,0.15,0.15
+2026-09-26T07:44:49+00:00,ven-155,Kennen Heart of the Tempest,Vendetta,vendetta,Rare,0,1,0.0,0.13,0.13
+2026-09-26T07:44:49+00:00,ven-156,Lightning Rush,Vendetta,vendetta,Epic,0,1,0.0,6.07,6.07
+2026-09-26T07:44:49+00:00,ven-159,Kinkou Temple,Vendetta,vendetta,Uncommon,1,0,0.07,0.26,0.07
+2026-09-26T07:44:49+00:00,ven-160,Mystic Vortex,Vendetta,vendetta,Uncommon,1,0,0.08,0.25,0.08
+2026-09-26T07:44:49+00:00,ven-161,Piltovan Forge,Vendetta,vendetta,Uncommon,1,0,0.06,0.21,0.06
+2026-09-26T07:44:49+00:00,ven-162,Protective Sands,Vendetta,vendetta,Uncommon,2,0,0.06,0.28,0.12
+2026-09-26T07:44:49+00:00,ven-163,Risen Altar,Vendetta,vendetta,Uncommon,1,0,0.09,0.33,0.09
+2026-09-26T07:44:49+00:00,ven-164,Sandswept Tomb,Vendetta,vendetta,Uncommon,1,0,0.12,0.33,0.12
+2026-09-26T07:44:49+00:00,ven-165,Shadow Temple,Vendetta,vendetta,Uncommon,1,0,0.07,0.32,0.07
+2026-09-26T07:44:49+00:00,ven-166,Threshold of the Gray,Vendetta,vendetta,Uncommon,1,0,0.08,0.29,0.08
+2026-09-26T07:44:49+00:00,ven-182,Illaoi Prophet of the Great Kraken,Vendetta,vendetta,Showcase,0,1,0.0,97.87,97.87
+2026-09-26T07:44:49+00:00,ven-r02a,Calm Rune,Vendetta,vendetta,Showcase,0,1,0.0,5.8,5.8
+2026-09-26T07:44:49+00:00,ven-r04a,Body Rune,Vendetta,vendetta,Showcase,0,1,0.0,4.82,4.82
+2026-09-26T07:44:49+00:00,ven-sp4,Sett Brawler,Vendetta,vendetta,Showcase,0,1,0.0,12.78,12.78
