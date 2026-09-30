@@ -1,5 +1,5 @@
 {
-  "computed_at": "2026-09-30T05:14:00+00:00",
+  "computed_at": "2026-09-30T06:14:04+00:00",
   "window_hours": 24,
   "baseline_cards_matched": 621,
   "gainers": [
@@ -132,22 +132,6 @@
       "value_delta_pct": 4.9
     },
     {
-      "card_id": "sfd-045",
-      "card_name": "Not So Fast",
-      "set": "Spiritforged",
-      "rarity": "Uncommon",
-      "normal_owned": 3,
-      "foil_owned": 0,
-      "normal_price_now": 1.35,
-      "normal_price_prior": 1.21,
-      "foil_price_now": 3.56,
-      "foil_price_prior": 3.62,
-      "value_now": 4.05,
-      "value_prior": 3.63,
-      "value_delta": 0.42,
-      "value_delta_pct": 11.57
-    },
-    {
       "card_id": "unl-145",
       "card_name": "Pyke Returned",
       "set": "Unleashed",
@@ -162,6 +146,22 @@
       "value_prior": 1.36,
       "value_delta": 0.38,
       "value_delta_pct": 27.94
+    },
+    {
+      "card_id": "unl-042",
+      "card_name": "Back Off",
+      "set": "Unleashed",
+      "rarity": "Uncommon",
+      "normal_owned": 7,
+      "foil_owned": 0,
+      "normal_price_now": 0.29,
+      "normal_price_prior": 0.24,
+      "foil_price_now": 1.5,
+      "foil_price_prior": 1.62,
+      "value_now": 2.03,
+      "value_prior": 1.68,
+      "value_delta": 0.35,
+      "value_delta_pct": 20.83
     }
   ],
   "losers": [
